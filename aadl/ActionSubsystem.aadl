@@ -1,0 +1,14 @@
+package ActionSubsystem
+public
+	
+	system ActionSubsystem
+		features
+			trigger_alarm: in data port;
+			door_control: in data port;
+	end ActionSubsystem;
+
+	system implementation ActionSubsystem.Impl
+	
+	end ActionSubsystem.Impl;
+
+end ActionSubsystem;

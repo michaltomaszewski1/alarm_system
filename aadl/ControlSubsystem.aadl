@@ -1,0 +1,17 @@
+package ControlSubsystem
+public
+	
+	system ControlSubsystem
+		features
+			detected_movements: in data port;
+			camera_feeds: in data port;
+			camera_controls: out data port;
+			trigger_alarm: out data port;
+			door_control: out data port;
+	end ControlSubsystem;
+	
+	system implementation ControlSubsystem.Impl
+
+	
+	end ControlSubsystem.Impl;
+end ControlSubsystem;

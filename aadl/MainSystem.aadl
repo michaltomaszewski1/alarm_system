@@ -1,0 +1,25 @@
+package MainSystem
+public
+	
+	with ControlSubsystem;
+	with SensorSubsystem;
+	with ActionSubsystem;
+	
+	system MainSystem
+	end MainSystem;
+	
+	system implementation MainSystem.Impl
+		subcomponents
+			Control: system ControlSubsystem::ControlSubsystem.Impl;
+			Sensor: system SensorSubsystem::SensorSubsystem.Impl;
+			Action: system ActionSubsystem::ActionSubsystem.Impl;
+			
+		connections
+			detected_movements: port Sensor.detected_movements -> Control.detected_movements;
+			camera_feeds: port Sensor.camera_feeds -> Control.camera_feeds;
+			camera_controls: port Control.camera_controls -> Sensor.camera_controls;
+			trigger_alarm: port Control.trigger_alarm -> Action.trigger_alarm;
+			door_control: port Control.door_control -> Action.door_control;
+			
+	end MainSystem.Impl;
+end MainSystem;

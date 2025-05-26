@@ -1,0 +1,88 @@
+package SensorSubsystem
+public
+	
+	bus Ethernet
+	end Ethernet;
+	
+	device MovementDetector
+		features
+			triggered: out data port;
+			eth: requires bus access Ethernet;
+	end MovementDetector;
+	
+	device Camera
+		features 
+			feed: out data port;
+			control: in data port;
+			eth: requires bus access Ethernet;
+	end Camera;
+	
+	processor MovementDetectorController
+		features
+			trigger: in data port;
+			detected_movements: out data port;
+			in_eth: requires bus access Ethernet;
+			out_eth: requires bus access Ethernet;
+	end MovementDetectorController;
+	
+	processor CameraController
+			features
+				camera_feed: in data port;
+				camera_feeds: out data port;
+				camera_controls: in data port;
+				camera_control: out data port;
+				in_eth: requires bus access Ethernet;
+				out_eth: requires bus access Ethernet;
+	end CameraController;
+	
+	system SensorSubsystem
+		features 
+			detected_movements: out data port;
+			camera_feeds: out data port;
+			camera_controls: in data port;
+	end SensorSubsystem;
+	
+	system implementation SensorSubsystem.Impl
+	
+		subcomponents
+			movement_detector_controller: processor MovementDetectorController;
+			camera_controller: processor CameraController;
+			detector1: device MovementDetector;
+			detector2: device MovementDetector;
+			camera1: device Camera;
+			detector_eth: bus Ethernet;
+			camera_eth: bus Ethernet;
+			control_eth: bus Ethernet;
+			
+		connections
+			eth_in_detector_controller: bus access detector_eth -> movement_detector_controller.in_eth;
+			eth_out_detector_controller: bus access movement_detector_controller.out_eth -> control_eth;
+			eth_in_camera_controller: bus access camera_eth -> camera_controller.in_eth;
+			eth_out_camera_controller: bus access camera_controller.out_eth <-> control_eth;
+			eth_detector1: bus access detector1.eth -> detector_eth;
+			eth_detector2: bus access detector2.eth -> detector_eth;
+			eth_camera1: bus access camera1.eth <-> camera_eth;
+			
+			out_detected_movements: port movement_detector_controller.detected_movements -> detected_movements;
+			out_camera_feed: port camera_controller.camera_feeds -> camera_feeds;
+			in_camera_control: port camera_controls -> camera_controller.camera_controls;
+			
+			detector1_trigger: port detector1.triggered -> movement_detector_controller.trigger;
+			detector2_trigger: port detector2.triggered -> movement_detector_controller.trigger;
+			camera1_feed: port camera1.feed -> camera_controller.camera_feed;
+			camera1_control: port camera_controller.camera_control -> camera1.control;
+			
+		properties
+			Actual_Connection_Binding => (reference(control_eth)) applies to out_detected_movements;
+			Actual_Connection_Binding => (reference(control_eth)) applies to out_camera_feed;
+			Actual_Connection_Binding => (reference(control_eth)) applies to in_camera_control;
+			
+			
+			Actual_Connection_Binding => (reference(detector_eth)) applies to detector1_trigger;
+			Actual_Connection_Binding => (reference(detector_eth)) applies to detector2_trigger;
+			Actual_Connection_Binding => (reference(camera_eth)) applies to camera1_feed;
+			Actual_Connection_Binding => (reference(camera_eth)) applies to camera1_control;
+			
+	end SensorSubsystem.Impl;
+
+end SensorSubsystem;

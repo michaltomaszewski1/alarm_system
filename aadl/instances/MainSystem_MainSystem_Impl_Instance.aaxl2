@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="ASCII"?>
+<xmi:XMI xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:aadl2="http://aadl.info/AADL/2.0" xmlns:instance="http://aadl.info/AADL/2.0/instance">
+  <instance:SystemInstance name="MainSystem_Impl_Instance" category="system">
+    <componentInstance name="Control" category="system">
+      <featureInstance name="detected_movements">
+        <feature xsi:type="aadl2:DataPort" href="../ControlSubsystem.aadl#/0/@ownedPublicSection/@ownedClassifier.0/@ownedDataPort.0"/>
+      </featureInstance>
+      <featureInstance name="camera_feed">
+        <feature xsi:type="aadl2:DataPort" href="../ControlSubsystem.aadl#/0/@ownedPublicSection/@ownedClassifier.0/@ownedDataPort.1"/>
+      </featureInstance>
+      <featureInstance name="camera_control" direction="out">
+        <feature xsi:type="aadl2:DataPort" href="../ControlSubsystem.aadl#/0/@ownedPublicSection/@ownedClassifier.0/@ownedDataPort.2"/>
+      </featureInstance>
+      <featureInstance name="trigger_alarm" direction="out">
+        <feature xsi:type="aadl2:DataPort" href="../ControlSubsystem.aadl#/0/@ownedPublicSection/@ownedClassifier.0/@ownedDataPort.3"/>
+      </featureInstance>
+      <featureInstance name="door_control" direction="out">
+        <feature xsi:type="aadl2:DataPort" href="../ControlSubsystem.aadl#/0/@ownedPublicSection/@ownedClassifier.0/@ownedDataPort.4"/>
+      </featureInstance>
+      <subcomponent xsi:type="aadl2:SystemSubcomponent" href="../MainSystem.aadl#/0/@ownedPublicSection/@ownedClassifier.1/@ownedSystemSubcomponent.0"/>
+      <index>0</index>
+      <classifier xsi:type="aadl2:SystemImplementation" href="../ControlSubsystem.aadl#ControlSubsystem.ControlSubsystem.Impl"/>
+    </componentInstance>
+    <componentInstance name="Sensor" category="system">
+      <featureInstance name="detected_movements" direction="out">
+        <feature xsi:type="aadl2:DataPort" href="../SensorSubsystem.aadl#/0/@ownedPublicSection/@ownedClassifier.6/@ownedDataPort.0"/>
+      </featureInstance>
+      <featureInstance name="camera_feed" direction="out">
+        <feature xsi:type="aadl2:DataPort" href="../SensorSubsystem.aadl#/0/@ownedPublicSection/@ownedClassifier.6/@ownedDataPort.1"/>
+      </featureInstance>
+      <featureInstance name="camera_control">
+        <feature xsi:type="aadl2:DataPort" href="../SensorSubsystem.aadl#/0/@ownedPublicSection/@ownedClassifier.6/@ownedDataPort.2"/>
+      </featureInstance>
+      <componentInstance name="detector1" category="device">
+        <featureInstance name="triggered" direction="out">
+          <feature xsi:type="aadl2:DataPort" href="../SensorSubsystem.aadl#/0/@ownedPublicSection/@ownedClassifier.3/@ownedDataPort.0"/>
+        </featureInstance>
+        <featureInstance name="eth" category="busAccess" type="/1">
+          <feature xsi:type="aadl2:BusAccess" href="../SensorSubsystem.aadl#/0/@ownedPublicSection/@ownedClassifier.3/@ownedBusAccess.0"/>
+        </featureInstance>
+        <subcomponent xsi:type="aadl2:DeviceSubcomponent" href="../SensorSubsystem.aadl#/0/@ownedPublicSection/@ownedClassifier.7/@ownedDeviceSubcomponent.0"/>
+        <index>0</index>
+        <classifier xsi:type="aadl2:DeviceType" href="../SensorSubsystem.aadl#SensorSubsystem.MovementDetector"/>
+      </componentInstance>
+      <componentInstance name="detector2" category="device">
+        <featureInstance name="triggered" direction="out">
+          <feature xsi:type="aadl2:DataPort" href="../SensorSubsystem.aadl#/0/@ownedPublicSection/@ownedClassifier.3/@ownedDataPort.0"/>
+        </featureInstance>
+        <featureInstance name="eth" category="busAccess" type="/1">
+          <feature xsi:type="aadl2:BusAccess" href="../SensorSubsystem.aadl#/0/@ownedPublicSection/@ownedClassifier.3/@ownedBusAccess.0"/>
+        </featureInstance>
+        <subcomponent xsi:type="aadl2:DeviceSubcomponent" href="../SensorSubsystem.aadl#/0/@ownedPublicSection/@ownedClassifier.7/@ownedDeviceSubcomponent.1"/>
+        <index>0</index>
+        <classifier xsi:type="aadl2:DeviceType" href="../SensorSubsystem.aadl#SensorSubsystem.MovementDetector"/>
+      </componentInstance>
+      <componentInstance name="camera1" category="device">
+        <featureInstance name="feed" direction="out">
+          <feature xsi:type="aadl2:DataPort" href="../SensorSubsystem.aadl#/0/@ownedPublicSection/@ownedClassifier.4/@ownedDataPort.0"/>
+        </featureInstance>
+        <featureInstance name="control">
+          <feature xsi:type="aadl2:DataPort" href="../SensorSubsystem.aadl#/0/@ownedPublicSection/@ownedClassifier.4/@ownedDataPort.1"/>
+        </featureInstance>
+        <featureInstance name="eth" category="busAccess" type="/1">
+          <feature xsi:type="aadl2:BusAccess" href="../SensorSubsystem.aadl#/0/@ownedPublicSection/@ownedClassifier.4/@ownedBusAccess.0"/>
+        </featureInstance>
+        <subcomponent xsi:type="aadl2:DeviceSubcomponent" href="../SensorSubsystem.aadl#/0/@ownedPublicSection/@ownedClassifier.7/@ownedDeviceSubcomponent.2"/>
+        <index>0</index>
+        <classifier xsi:type="aadl2:DeviceType" href="../SensorSubsystem.aadl#SensorSubsystem.Camera"/>
+      </componentInstance>
+      <subcomponent xsi:type="aadl2:SystemSubcomponent" href="../MainSystem.aadl#/0/@ownedPublicSection/@ownedClassifier.1/@ownedSystemSubcomponent.1"/>
+      <index>0</index>
+      <classifier xsi:type="aadl2:SystemImplementation" href="../SensorSubsystem.aadl#SensorSubsystem.SensorSubsystem.Impl"/>
+    </componentInstance>
+    <componentInstance name="Action" category="system">
+      <featureInstance name="trigger_alarm">
+        <feature xsi:type="aadl2:DataPort" href="../ActionSubsystem.aadl#/0/@ownedPublicSection/@ownedClassifier.0/@ownedDataPort.0"/>
+      </featureInstance>
+      <featureInstance name="door_control">
+        <feature xsi:type="aadl2:DataPort" href="../ActionSubsystem.aadl#/0/@ownedPublicSection/@ownedClassifier.0/@ownedDataPort.1"/>
+      </featureInstance>
+      <subcomponent xsi:type="aadl2:SystemSubcomponent" href="../MainSystem.aadl#/0/@ownedPublicSection/@ownedClassifier.1/@ownedSystemSubcomponent.2"/>
+      <index>0</index>
+      <classifier xsi:type="aadl2:SystemImplementation" href="../ActionSubsystem.aadl#ActionSubsystem.ActionSubsystem.Impl"/>
+    </componentInstance>
+    <connectionInstance name="Control.camera_control -> Sensor.camera_control" complete="true" kind="portConnection" destination="/0/@componentInstance.1/@featureInstance.2" source="/0/@componentInstance.0/@featureInstance.2">
+      <connectionReference context="/0" source="/0/@componentInstance.0/@featureInstance.2" destination="/0/@componentInstance.1/@featureInstance.2">
+        <connection xsi:type="aadl2:PortConnection" href="../MainSystem.aadl#/0/@ownedPublicSection/@ownedClassifier.1/@ownedPortConnection.2"/>
+      </connectionReference>
+    </connectionInstance>
+    <connectionInstance name="Control.trigger_alarm -> Action.trigger_alarm" complete="true" kind="portConnection" destination="/0/@componentInstance.2/@featureInstance.0" source="/0/@componentInstance.0/@featureInstance.3">
+      <connectionReference context="/0" source="/0/@componentInstance.0/@featureInstance.3" destination="/0/@componentInstance.2/@featureInstance.0">
+        <connection xsi:type="aadl2:PortConnection" href="../MainSystem.aadl#/0/@ownedPublicSection/@ownedClassifier.1/@ownedPortConnection.3"/>
+      </connectionReference>
+    </connectionInstance>
+    <connectionInstance name="Control.door_control -> Action.door_control" complete="true" kind="portConnection" destination="/0/@componentInstance.2/@featureInstance.1" source="/0/@componentInstance.0/@featureInstance.4">
+      <connectionReference context="/0" source="/0/@componentInstance.0/@featureInstance.4" destination="/0/@componentInstance.2/@featureInstance.1">
+        <connection xsi:type="aadl2:PortConnection" href="../MainSystem.aadl#/0/@ownedPublicSection/@ownedClassifier.1/@ownedPortConnection.4"/>
+      </connectionReference>
+    </connectionInstance>
+    <connectionInstance name="Sensor.detected_movements -> Control.detected_movements" complete="true" kind="portConnection" destination="/0/@componentInstance.0/@featureInstance.0" source="/0/@componentInstance.1/@featureInstance.0">
+      <connectionReference context="/0" source="/0/@componentInstance.1/@featureInstance.0" destination="/0/@componentInstance.0/@featureInstance.0">
+        <connection xsi:type="aadl2:PortConnection" href="../MainSystem.aadl#/0/@ownedPublicSection/@ownedClassifier.1/@ownedPortConnection.0"/>
+      </connectionReference>
+    </connectionInstance>
+    <connectionInstance name="Sensor.camera_feed -> Control.camera_feed" complete="true" kind="portConnection" destination="/0/@componentInstance.0/@featureInstance.1" source="/0/@componentInstance.1/@featureInstance.1">
+      <connectionReference context="/0" source="/0/@componentInstance.1/@featureInstance.1" destination="/0/@componentInstance.0/@featureInstance.1">
+        <connection xsi:type="aadl2:PortConnection" href="../MainSystem.aadl#/0/@ownedPublicSection/@ownedClassifier.1/@ownedPortConnection.1"/>
+      </connectionReference>
+    </connectionInstance>
+    <classifier xsi:type="aadl2:SystemImplementation" href="../MainSystem.aadl#MainSystem.MainSystem.Impl"/>
+    <systemOperationMode name="No Modes"/>
+    <componentImplementation xsi:type="aadl2:SystemImplementation" href="../MainSystem.aadl#MainSystem.MainSystem.Impl"/>
+  </instance:SystemInstance>
+  <instance:ComponentInstance name="SensorSubsystem::Ethernet" category="bus">
+    <classifier xsi:type="aadl2:BusType" href="../SensorSubsystem.aadl#SensorSubsystem.Ethernet"/>
+  </instance:ComponentInstance>
+</xmi:XMI>
