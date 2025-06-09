@@ -1,6 +1,79 @@
 package ControlSubsystem
 public
 	
+	bus Ethernet
+	end Ethernet;
+	
+	device ArmingKeypad
+		features
+			arm_disarm: out data port;
+	end ArmingKeypad;
+	
+	memory CameraFeedStorage
+		features
+			eth: requires bus access Ethernet;
+	end CameraFeedStorage;
+	
+	
+	device CameraControlPanel
+		features 
+			camera_feeds: in data port;
+			camera_controls: out data port;
+			sensor_eth: requires bus access Ethernet;
+			storage_eth: provides bus access Ethernet;
+	end CameraControlPanel;
+	
+	thread DetectionThread
+		features
+			detected_movements: in data port;
+			arm_disarm: in data port;
+			detected: out data port;
+	end DetectionThread;
+	
+	thread implementation DetectionThread.Impl
+	end DetectionThread.Impl;
+	
+	thread ActionThread
+		features
+			detected: in data port;
+			trigger_alarm: out data port;
+			door_control: out data port;
+	end ActionThread;
+	
+	thread implementation ActionThread.Impl
+	end ActionThread.Impl;
+	
+	process ControlProcess
+		features
+			detected_movements: in data port;
+			trigger_alarm: out data port;
+			door_control: out data port;
+			arm_disarm: in data port;
+	end ControlProcess;
+	
+	process implementation ControlProcess.Impl
+		subcomponents
+			detection: thread DetectionThread.Impl;
+			action: thread ActionThread.Impl;
+		connections
+			detected_movements_proc_con: port detected_movements -> detection.detected_movements;
+			trigger_alarm_proc_con: port action.trigger_alarm -> trigger_alarm;
+			door_control_proc_con: port action.door_control -> door_control;
+			arm_disarm_proc_con: port arm_disarm -> detection.arm_disarm;
+			detected_proc_con: port detection.detected -> action.detected;
+			
+	end ControlProcess.Impl;
+	
+	processor SystemController
+		features
+--			detected_movements: in data port;
+--			trigger_alarm: out data port;
+--			door_control: out data port;
+--			arm_disarm: in data port;
+			sensor_bus: requires bus access Ethernet;
+			action_bus: requires bus access Ethernet;
+	end SystemController;
+	
 	system ControlSubsystem
 		features
 			detected_movements: in data port;
@@ -8,10 +81,44 @@ public
 			camera_controls: out data port;
 			trigger_alarm: out data port;
 			door_control: out data port;
+			sensor_bus: provides bus access Ethernet;
+			action_bus: provides bus access Ethernet;
 	end ControlSubsystem;
 	
 	system implementation ControlSubsystem.Impl
-
+		subcomponents
+			arming_keypad: device ArmingKeypad;
+			camera_feed_storage: memory CameraFeedStorage;
+			camera_control_panel: device CameraControlPanel;
+			control_process: process ControlProcess.Impl;
+			system_controller: processor SystemController;
+			sensor_eth: bus Ethernet;
+			action_eth: bus Ethernet;
+			
+		connections
+			detected_movements_con: port detected_movements -> control_process.detected_movements;
+			camera_feeds_con: port camera_feeds -> camera_control_panel.camera_feeds;
+			camera_controls_con: port camera_control_panel.camera_controls -> camera_controls;
+			trigger_alarm_con: port control_process.trigger_alarm -> trigger_alarm;
+			door_control_con: port control_process.door_control -> door_control;
+			arm_disarm_con: port arming_keypad.arm_disarm -> control_process.arm_disarm;
+			
+			sensor_camera_con: bus access camera_control_panel.sensor_eth <-> sensor_eth;
+			sensor_controller_con: bus access system_controller.sensor_bus <-> sensor_eth;
+			action_controller_con: bus access system_controller.action_bus -> action_eth;
+			sensor_out_con: bus access sensor_bus <-> sensor_eth;
+			action_out_con: bus access action_eth -> action_bus;
+			camera_feed_storage_con: bus access camera_control_panel.storage_eth <-> camera_feed_storage.eth;
+			
+		properties
+			Actual_Connection_Binding => (reference(sensor_eth)) applies to detected_movements_con;
+			Actual_Connection_Binding => (reference(sensor_eth)) applies to camera_feeds_con;
+			Actual_Connection_Binding => (reference(sensor_eth)) applies to camera_controls_con;
+			Actual_Connection_Binding => (reference(action_eth)) applies to trigger_alarm_con;
+			Actual_Connection_Binding => (reference(action_eth)) applies to door_control_con;
+			
+			
+			Actual_Processor_Binding => (reference(system_controller)) applies to control_process;
 	
 	end ControlSubsystem.Impl;
 end ControlSubsystem;

@@ -1,73 +1,73 @@
 <?xml version="1.0" encoding="ASCII"?>
 <diagram:Diagram xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:diagram="http://osate.org/diagram" formatVersion="7">
-  <element uuid="4a4aaf40-45a2-48b9-8c5f-b22d21c006c9" manual="true">
-    <element uuid="ec55bfae-05df-42a4-a12f-66794d318f3b" manual="true">
-      <element uuid="36ee17e8-6ec7-4452-8958-84e689a3fadc" manual="true" dockArea="right">
+  <element uuid="2af579f7-c9ab-4c94-95a8-dc29870d16b1" manual="true">
+    <element uuid="7c228484-e895-4e64-bea4-c36ac89a17cb" manual="true">
+      <element uuid="e6853091-0fb5-4887-8c02-27d8d3086a21" manual="true" dockArea="right">
         <bo>
           <seg>org.osate.ge.diagrams.instance</seg>
           <seg>feature_instance</seg>
           <seg>control</seg>
         </bo>
-        <position x="155.89452362060547" y="45.0"/>
+        <position x="155.98047256469727" y="90.0"/>
       </element>
-      <element uuid="489f2492-8dfa-4957-872d-210aa66b8b64" manual="true" dockArea="right">
+      <element uuid="b9aaeef5-8df5-4a37-84f1-884a2b1e37e4" manual="true" dockArea="right">
         <bo>
           <seg>org.osate.ge.diagrams.instance</seg>
           <seg>feature_instance</seg>
           <seg>eth</seg>
         </bo>
-        <position x="177.3788948059082"/>
+        <position x="177.46484375"/>
       </element>
-      <element uuid="f142216c-2bcb-4ee6-9a33-5b063f4bb942" manual="true" dockArea="right">
+      <element uuid="a3fb2bc8-6fe0-4c92-98be-9dd62545104e" manual="true" dockArea="right">
         <bo>
           <seg>org.osate.ge.diagrams.instance</seg>
           <seg>feature_instance</seg>
           <seg>feed</seg>
         </bo>
-        <position x="169.96353149414062" y="90.0"/>
+        <position x="170.04948043823242" y="45.0"/>
       </element>
       <bo>
         <seg>org.osate.ge.diagrams.instance</seg>
         <seg>component_instance</seg>
         <seg>camera1</seg>
       </bo>
-      <position x="290.0" y="290.0"/>
-      <size width="207.9140510559082" height="130.0"/>
+      <position x="390.0" y="310.0"/>
+      <size width="208.0" height="130.0"/>
     </element>
-    <element uuid="b38ee9cf-59c9-4787-b7b8-435f9aadffb3" manual="true">
-      <element uuid="43c98605-e915-422f-88e9-3a14b2ecd764" manual="true" dockArea="left">
+    <element uuid="5dc82ee0-d543-4ecc-b234-cadaabed24e5" manual="true">
+      <element uuid="ff86cd0b-c1e3-4321-bb72-34676f1e9e30" manual="true" dockArea="left">
         <bo>
           <seg>org.osate.ge.diagrams.instance</seg>
           <seg>feature_instance</seg>
           <seg>camera_control</seg>
         </bo>
-        <position y="60.0"/>
+        <position y="166.0"/>
       </element>
-      <element uuid="4f744ed5-35bf-43a7-913f-9237e8ccb224" manual="true" dockArea="left">
+      <element uuid="394bdf82-3e98-4c3a-9af2-f1af3c875f33" manual="true" dockArea="right">
         <bo>
           <seg>org.osate.ge.diagrams.instance</seg>
           <seg>feature_instance</seg>
           <seg>camera_controls</seg>
         </bo>
-        <position y="160.0"/>
+        <position x="269.4387969970703" y="172.0"/>
       </element>
-      <element uuid="5d5fd0df-aaec-40c3-b5e4-4a5cc418b313" manual="true" dockArea="left">
+      <element uuid="5fb5bf7f-1c56-455b-931e-a85bb39e2f39" manual="true" dockArea="left">
         <bo>
           <seg>org.osate.ge.diagrams.instance</seg>
           <seg>feature_instance</seg>
           <seg>camera_feed</seg>
         </bo>
-        <position y="110.0"/>
+        <position y="121.0"/>
       </element>
-      <element uuid="767ff5ec-1e3e-47f6-b109-13f4d6c85d5b" manual="true" dockArea="right">
+      <element uuid="36d6749d-2f9b-4486-8346-16fe0addf2cc" manual="true" dockArea="right">
         <bo>
           <seg>org.osate.ge.diagrams.instance</seg>
           <seg>feature_instance</seg>
           <seg>camera_feeds</seg>
         </bo>
-        <position x="283.3424758911133" y="126.66666666666669"/>
+        <position x="283.50782012939453" y="127.0"/>
       </element>
-      <element uuid="72e7cd44-e91e-448f-ab7f-a0f73b93e66a" manual="true" dockArea="left">
+      <element uuid="adc3ffde-d2d4-4aa2-aae8-d617e364033e" manual="true" dockArea="left">
         <bo>
           <seg>org.osate.ge.diagrams.instance</seg>
           <seg>feature_instance</seg>
@@ -75,109 +75,109 @@
         </bo>
         <position y="10.0"/>
       </element>
-      <element uuid="eb7ce246-ff42-4e21-84a0-7182a708f40a" manual="true" dockArea="right">
+      <element uuid="3d065f0f-61ad-4abd-903f-e619cf0b8ae0" manual="true" dockArea="right">
         <bo>
           <seg>org.osate.ge.diagrams.instance</seg>
           <seg>feature_instance</seg>
           <seg>out_eth</seg>
         </bo>
-        <position x="323.34898376464844" y="43.333333333333336"/>
+        <position x="323.5143280029297" y="43.0"/>
       </element>
       <bo>
         <seg>org.osate.ge.diagrams.instance</seg>
         <seg>component_instance</seg>
         <seg>camera_controller</seg>
       </bo>
-      <position x="901.0958989461263" y="229.0"/>
-      <size width="379.83465576171875" height="210.0"/>
+      <position x="901.0" y="229.0"/>
+      <size width="380.0" height="212.0"/>
     </element>
-    <element uuid="30030943-428d-4d71-8d7c-9af41c0fe7ec" manual="true">
+    <element uuid="d791a932-81c4-4385-a7d5-8be427020dfd" manual="true">
       <bo>
         <seg>org.osate.ge.diagrams.instance</seg>
         <seg>component_instance</seg>
         <seg>camera_eth</seg>
       </bo>
-      <position x="640.0" y="260.0"/>
-      <size width="122.41014862060547" height="40.0"/>
+      <position x="710.0" y="280.0"/>
+      <size width="122.0" height="40.0"/>
     </element>
-    <element uuid="f999c866-cde5-4b80-b49e-cdd5f0766704" manual="true">
+    <element uuid="c377b736-2542-49cb-b181-88326f89a267" manual="true">
       <bo>
         <seg>org.osate.ge.diagrams.instance</seg>
         <seg>component_instance</seg>
         <seg>control_eth</seg>
       </bo>
-      <position x="1270.0" y="510.0"/>
-      <size width="117.97004699707031" height="40.0"/>
+      <position x="1388.0" y="274.0"/>
+      <size width="118.0" height="40.0"/>
     </element>
-    <element uuid="b6fc6620-cd5c-44ac-b30e-1769ad4201ab" manual="true">
-      <element uuid="e45175fd-36cd-4064-9635-ca47ca29a50e" manual="true" dockArea="right">
+    <element uuid="2aef5ab1-5acb-429e-8dc7-19d1c997ce72" manual="true">
+      <element uuid="b3bc3a2e-1b73-4a0d-9e8b-7f11b36e8912" manual="true" dockArea="right">
         <bo>
           <seg>org.osate.ge.diagrams.instance</seg>
           <seg>feature_instance</seg>
           <seg>eth</seg>
         </bo>
-        <position x="206.30467987060547" y="10.0"/>
+        <position x="206.46484375" y="10.0"/>
       </element>
-      <element uuid="49bf7466-b90b-44d2-b889-889cbd147085" manual="true" dockArea="right">
+      <element uuid="27e850c1-de09-4f5d-a026-38f242d62d15" manual="true" dockArea="right">
         <bo>
           <seg>org.osate.ge.diagrams.instance</seg>
           <seg>feature_instance</seg>
           <seg>triggered</seg>
         </bo>
-        <position x="172.2161407470703" y="60.0"/>
+        <position x="172.37630462646484" y="60.0"/>
       </element>
       <bo>
         <seg>org.osate.ge.diagrams.instance</seg>
         <seg>component_instance</seg>
         <seg>detector1</seg>
       </bo>
-      <position x="60.000000000000114" y="170.0"/>
-      <size width="236.83983612060547" height="110.0"/>
+      <position x="363.0" y="38.0"/>
+      <size width="237.0" height="110.0"/>
     </element>
-    <element uuid="e2a1a13d-6d36-401a-9e0b-78b1accc7344" manual="true">
-      <element uuid="8652ca53-6b36-4acf-9578-8c9d90eda7b4" manual="true" dockArea="right">
+    <element uuid="8b14f8fa-c336-42a9-ac05-5f052ec80992" manual="true">
+      <element uuid="fa5259d9-12b5-43ac-a53d-aab6cf1a42c1" manual="true" dockArea="right">
         <bo>
           <seg>org.osate.ge.diagrams.instance</seg>
           <seg>feature_instance</seg>
           <seg>eth</seg>
         </bo>
-        <position x="206.30467987060547" y="10.0"/>
+        <position x="206.46484375" y="10.0"/>
       </element>
-      <element uuid="12c32213-1322-4236-a5e2-89ae88cbc253" manual="true" dockArea="right">
+      <element uuid="80ad0648-5377-4ebc-a9c8-052c13a61c91" manual="true" dockArea="right">
         <bo>
           <seg>org.osate.ge.diagrams.instance</seg>
           <seg>feature_instance</seg>
           <seg>triggered</seg>
         </bo>
-        <position x="172.2161407470703" y="60.0"/>
+        <position x="172.37630462646484" y="60.0"/>
       </element>
       <bo>
         <seg>org.osate.ge.diagrams.instance</seg>
         <seg>component_instance</seg>
         <seg>detector2</seg>
       </bo>
-      <position x="50.000000000000114" y="30.0"/>
-      <size width="236.83983612060547" height="110.0"/>
+      <position x="363.0" y="168.0"/>
+      <size width="237.0" height="110.0"/>
     </element>
-    <element uuid="fc224399-c072-455e-8e28-e51402d08c84" manual="true">
+    <element uuid="1f69f77e-83a7-4e23-9086-9ddf02d9418d" manual="true">
       <bo>
         <seg>org.osate.ge.diagrams.instance</seg>
         <seg>component_instance</seg>
         <seg>detector_eth</seg>
       </bo>
-      <position x="660.0" y="70.00000000000003"/>
-      <size width="126.12760162353516" height="35.0"/>
+      <position x="657.0" y="68.0"/>
+      <size width="126.0" height="35.0"/>
     </element>
-    <element uuid="8b73635a-cd8e-4cd0-a888-832f5e83832e" manual="true">
-      <element uuid="a5d6972b-1d42-40e1-8574-7eca544ddab1" manual="true" dockArea="right">
+    <element uuid="af08f4eb-13c6-415d-971f-be6cc6f3a574" manual="true">
+      <element uuid="80538b99-b81e-42b5-a5a7-a3eaced2ec57" manual="true" dockArea="right">
         <bo>
           <seg>org.osate.ge.diagrams.instance</seg>
           <seg>feature_instance</seg>
           <seg>detected_movements</seg>
         </bo>
-        <position x="371.5716018676758" y="10.0"/>
+        <position x="371.51952362060547" y="10.0"/>
       </element>
-      <element uuid="0c950ebd-0d8e-4088-8861-6189083aa6b5" manual="true" dockArea="left">
+      <element uuid="7d20a97f-be55-4bf7-b9e4-e698604b7f3e" manual="true" dockArea="left">
         <bo>
           <seg>org.osate.ge.diagrams.instance</seg>
           <seg>feature_instance</seg>
@@ -185,36 +185,44 @@
         </bo>
         <position y="10.0"/>
       </element>
-      <element uuid="a64ee3a6-6a65-47ca-b30a-b4a77055759d" manual="true" dockArea="right">
+      <element uuid="06b3afa5-fb38-4427-afe7-8072911402e0" manual="true" dockArea="right">
         <bo>
           <seg>org.osate.ge.diagrams.instance</seg>
           <seg>feature_instance</seg>
           <seg>out_eth</seg>
         </bo>
-        <position x="454.56640625" y="60.0"/>
+        <position x="454.5143280029297" y="60.0"/>
       </element>
-      <element uuid="e2b11fa8-9afa-4f0c-8cdc-47752d849adc" manual="true" dockArea="left">
+      <element uuid="6de81974-99a9-4861-bdd7-2f94d031fb69" manual="true" dockArea="left">
         <bo>
           <seg>org.osate.ge.diagrams.instance</seg>
           <seg>feature_instance</seg>
-          <seg>trigger</seg>
+          <seg>trigger1</seg>
         </bo>
-        <position y="60.0"/>
+        <position y="55.0"/>
+      </element>
+      <element uuid="ae7bb506-1bd5-41c6-ba33-f33e3613e378" manual="true" dockArea="left">
+        <bo>
+          <seg>org.osate.ge.diagrams.instance</seg>
+          <seg>feature_instance</seg>
+          <seg>trigger2</seg>
+        </bo>
+        <position y="100.0"/>
       </element>
       <bo>
         <seg>org.osate.ge.diagrams.instance</seg>
         <seg>component_instance</seg>
         <seg>movement_detector_controller</seg>
       </bo>
-      <position x="857.3567581176758" y="43.833333333333336"/>
-      <size width="511.0520782470703" height="110.0"/>
+      <position x="857.0" y="44.0"/>
+      <size width="511.0" height="140.0"/>
     </element>
-    <element uuid="54d6e9c0-f5c6-4435-9b2c-c8329e324f24" manual="true">
-      <element uuid="945fbbdf-9d92-48c6-b3c6-4184243a787b" manual="true">
+    <element uuid="9e9ee6ab-0442-4b00-8826-25a2b0062313" manual="true">
+      <element uuid="8cc1d315-02bc-4077-9d7c-4dbe4bb70101" manual="true">
         <bo>
           <seg>pvg</seg>
           <seg>Deployment_Properties::Actual_Connection_Binding</seg>
-          <seg>30030943-428d-4d71-8d7c-9af41c0fe7ec</seg>
+          <seg>d791a932-81c4-4385-a7d5-8be427020dfd</seg>
         </bo>
       </element>
       <bo>
@@ -222,163 +230,159 @@
         <seg>connection_reference</seg>
         <seg>camera1_control : SensorSubsystem_Impl_Instance.camera_controller.camera_control -> SensorSubsystem_Impl_Instance.camera1.control</seg>
       </bo>
-      <bendpoints>
-        <point x="857.3566284179688" y="321.0"/>
-        <point x="857.3566284179688" y="324.0"/>
-      </bendpoints>
     </element>
-    <element uuid="740d7676-cd53-4b42-98fd-e68eae0ba9d3" manual="true">
-      <element uuid="705fc020-97fc-4f71-888b-12a141c9b1c2" manual="true">
+    <element uuid="041aa0f1-d032-4abe-bb49-481c5f8718b3" manual="true">
+      <element uuid="f7f3eeb5-7929-4f09-82d5-0921462b337b" manual="true">
         <bo>
           <seg>pvg</seg>
           <seg>Deployment_Properties::Actual_Connection_Binding</seg>
-          <seg>30030943-428d-4d71-8d7c-9af41c0fe7ec</seg>
+          <seg>d791a932-81c4-4385-a7d5-8be427020dfd</seg>
         </bo>
-        <bendpoints>
-          <point x="733.0" y="353.0000305175781"/>
-        </bendpoints>
       </element>
       <bo>
         <seg>org.osate.ge.diagrams.instance</seg>
         <seg>connection_reference</seg>
         <seg>camera1_feed : SensorSubsystem_Impl_Instance.camera1.feed -> SensorSubsystem_Impl_Instance.camera_controller.camera_feed</seg>
       </bo>
-      <bendpoints>
-        <point x="857.3566284179688" y="374.0000305175781"/>
-        <point x="857.3566284179688" y="371.0000305175781"/>
-      </bendpoints>
     </element>
-    <element uuid="04b01387-5aae-402b-82e1-a0ff9ca2a0c5" manual="true">
-      <element uuid="b21fae0f-db91-422a-8e4d-ad5d49c043b9" manual="true">
+    <element uuid="25b9aaf8-2787-4779-b2a1-737a42b84e88" manual="true">
+      <bo>
+        <seg>org.osate.ge.diagrams.instance</seg>
+        <seg>connection_reference</seg>
+        <seg>control_eth_access : SensorSubsystem_Impl_Instance.control_bus -> SensorSubsystem_Impl_Instance.control_eth</seg>
+      </bo>
+    </element>
+    <element uuid="493b586b-10b2-4d0d-91f7-abf7b31a6db4" manual="true">
+      <bo>
+        <seg>org.osate.ge.diagrams.instance</seg>
+        <seg>connection_reference</seg>
+        <seg>control_eth_access : SensorSubsystem_Impl_Instance.control_eth -> SensorSubsystem_Impl_Instance.control_bus</seg>
+      </bo>
+    </element>
+    <element uuid="c1b8b460-b452-4abd-b4e0-242533dcce54" manual="true">
+      <element uuid="da6da7e6-e9ea-4ce7-bd38-f60495264d10" manual="true">
         <bo>
           <seg>pvg</seg>
           <seg>Deployment_Properties::Actual_Connection_Binding</seg>
-          <seg>fc224399-c072-455e-8e28-e51402d08c84</seg>
+          <seg>1f69f77e-83a7-4e23-9086-9ddf02d9418d</seg>
         </bo>
       </element>
       <bo>
         <seg>org.osate.ge.diagrams.instance</seg>
         <seg>connection_reference</seg>
-        <seg>detector1_trigger : SensorSubsystem_Impl_Instance.detector1.triggered -> SensorSubsystem_Impl_Instance.movement_detector_controller.trigger</seg>
+        <seg>detector1_trigger : SensorSubsystem_Impl_Instance.detector1.triggered -> SensorSubsystem_Impl_Instance.movement_detector_controller.trigger1</seg>
       </bo>
-      <bendpoints>
-        <point x="857.3566284179688" y="260.0"/>
-        <point x="857.3566284179688" y="135.8332977294922"/>
-      </bendpoints>
     </element>
-    <element uuid="9ba3e2be-e30a-4dc7-8f9d-52c9bea89051" manual="true">
-      <element uuid="8685bca2-56f8-428f-80e1-a3de044bb2e4" manual="true">
+    <element uuid="6e3c2eeb-1195-427a-bf7b-f00c51d14518" manual="true">
+      <element uuid="517b6202-5ca4-40c7-bd9e-133127294826" manual="true">
         <bo>
           <seg>pvg</seg>
           <seg>Deployment_Properties::Actual_Connection_Binding</seg>
-          <seg>fc224399-c072-455e-8e28-e51402d08c84</seg>
+          <seg>1f69f77e-83a7-4e23-9086-9ddf02d9418d</seg>
         </bo>
       </element>
       <bo>
         <seg>org.osate.ge.diagrams.instance</seg>
         <seg>connection_reference</seg>
-        <seg>detector2_trigger : SensorSubsystem_Impl_Instance.detector2.triggered -> SensorSubsystem_Impl_Instance.movement_detector_controller.trigger</seg>
+        <seg>detector2_trigger : SensorSubsystem_Impl_Instance.detector2.triggered -> SensorSubsystem_Impl_Instance.movement_detector_controller.trigger2</seg>
       </bo>
-      <bendpoints>
-        <point x="629.4428100585938" y="130.00001525878906"/>
-        <point x="629.4428100585938" y="259.9999694824219"/>
-        <point x="857.3566284179688" y="259.9999694824219"/>
-        <point x="857.3566284179688" y="135.8332977294922"/>
-      </bendpoints>
     </element>
-    <element uuid="00d977a7-d40c-471d-8dad-71ed293c9553" manual="true">
+    <element uuid="43f09a24-ed49-41d5-8a45-ebc27f173ee9" manual="true">
       <bo>
         <seg>org.osate.ge.diagrams.instance</seg>
         <seg>connection_reference</seg>
         <seg>eth_camera1 : SensorSubsystem_Impl_Instance.camera1.eth -> SensorSubsystem_Impl_Instance.camera_eth</seg>
       </bo>
-      <bendpoints>
-        <point x="583.0" y="322.0"/>
-      </bendpoints>
     </element>
-    <element uuid="9f08f53a-3fdb-40b1-81b5-78c3d54c7606" manual="true">
+    <element uuid="7ee209d3-0e42-4bfc-a423-14886af45756" manual="true">
       <bo>
         <seg>org.osate.ge.diagrams.instance</seg>
         <seg>connection_reference</seg>
         <seg>eth_camera1 : SensorSubsystem_Impl_Instance.camera_eth -> SensorSubsystem_Impl_Instance.camera1.eth</seg>
       </bo>
+      <bendpoints>
+        <point x="599.0" y="349.0"/>
+      </bendpoints>
     </element>
-    <element uuid="1dfd9de4-501c-4c46-8a98-d299d4c40558" manual="true">
+    <element uuid="45353230-90e2-4e6b-a216-4271a9a77640" manual="true">
       <bo>
         <seg>org.osate.ge.diagrams.instance</seg>
         <seg>connection_reference</seg>
         <seg>eth_detector1 : SensorSubsystem_Impl_Instance.detector1.eth -> SensorSubsystem_Impl_Instance.detector_eth</seg>
       </bo>
       <bendpoints>
-        <point x="619.4428100585938" y="210.00003051757812"/>
-        <point x="619.4428100585938" y="91.66663360595703"/>
-        <point x="662.704833984375" y="91.66663360595703"/>
+        <point x="657.0" y="80.0"/>
       </bendpoints>
     </element>
-    <element uuid="4e3aa01c-4a28-4ded-82eb-4a57ec911b0d" manual="true">
+    <element uuid="624198ce-5386-4c9c-8d98-e99cd16450e6" manual="true">
       <bo>
         <seg>org.osate.ge.diagrams.instance</seg>
         <seg>connection_reference</seg>
         <seg>eth_detector2 : SensorSubsystem_Impl_Instance.detector2.eth -> SensorSubsystem_Impl_Instance.detector_eth</seg>
       </bo>
       <bendpoints>
-        <point x="666.704833984375" y="80.00000762939453"/>
+        <point x="609.0" y="210.0"/>
+        <point x="609.0" y="92.0"/>
+        <point x="653.0" y="92.0"/>
       </bendpoints>
     </element>
-    <element uuid="95324eba-da0c-4b64-bd70-64ca70d0a037" manual="true">
+    <element uuid="4ab89c5a-7b3f-4fd8-b196-7c77e60e3464" manual="true">
       <bo>
         <seg>org.osate.ge.diagrams.instance</seg>
         <seg>connection_reference</seg>
         <seg>eth_in_camera_controller : SensorSubsystem_Impl_Instance.camera_eth -> SensorSubsystem_Impl_Instance.camera_controller.in_eth</seg>
       </bo>
     </element>
-    <element uuid="fd81c32a-f3b7-4ecd-9552-1e88b8c54f7d" manual="true">
+    <element uuid="e05e15b3-a618-4c86-934b-0a43cd7439aa" manual="true">
       <bo>
         <seg>org.osate.ge.diagrams.instance</seg>
         <seg>connection_reference</seg>
         <seg>eth_in_detector_controller : SensorSubsystem_Impl_Instance.detector_eth -> SensorSubsystem_Impl_Instance.movement_detector_controller.in_eth</seg>
       </bo>
       <bendpoints>
-        <point x="792.83251953125" y="85.83330535888672"/>
+        <point x="783.0" y="86.0"/>
       </bendpoints>
     </element>
-    <element uuid="9c57aada-81bb-4644-ac03-8a98380b5f90" manual="true">
+    <element uuid="3ab98e63-f49d-4ef8-8870-554d51a58009" manual="true">
       <bo>
         <seg>org.osate.ge.diagrams.instance</seg>
         <seg>connection_reference</seg>
         <seg>eth_out_camera_controller : SensorSubsystem_Impl_Instance.camera_controller.out_eth -> SensorSubsystem_Impl_Instance.control_eth</seg>
       </bo>
       <bendpoints>
-        <point x="1346.0" y="316.0"/>
+        <point x="1388.0" y="304.0"/>
       </bendpoints>
     </element>
-    <element uuid="b76e5c51-74d0-4032-b7f6-d29dc1b10861" manual="true">
+    <element uuid="a30f8bea-5b97-4db5-97ff-d6cc8e7e5f96" manual="true">
       <bo>
         <seg>org.osate.ge.diagrams.instance</seg>
         <seg>connection_reference</seg>
         <seg>eth_out_camera_controller : SensorSubsystem_Impl_Instance.control_eth -> SensorSubsystem_Impl_Instance.camera_controller.out_eth</seg>
       </bo>
       <bendpoints>
-        <point x="1334.0" y="314.0"/>
+        <point x="1384.0" y="294.0"/>
+        <point x="1378.0" y="294.0"/>
+        <point x="1378.0" y="304.0"/>
       </bendpoints>
     </element>
-    <element uuid="4d909fb8-b3f5-4afc-8dbc-3fbe0e9e6c4b" manual="true">
+    <element uuid="6f751744-f285-4804-9444-d5c9cb1bea28" manual="true">
       <bo>
         <seg>org.osate.ge.diagrams.instance</seg>
         <seg>connection_reference</seg>
         <seg>eth_out_detector_controller : SensorSubsystem_Impl_Instance.movement_detector_controller.out_eth -> SensorSubsystem_Impl_Instance.control_eth</seg>
       </bo>
       <bendpoints>
-        <point x="1388.40869140625" y="135.8332977294922"/>
-        <point x="1387.0" y="480.0"/>
+        <point x="1378.0" y="136.0"/>
+        <point x="1378.0" y="284.0"/>
+        <point x="1384.0" y="284.0"/>
       </bendpoints>
     </element>
-    <element uuid="4e1f1681-8714-455e-a383-cd1a3508861e" manual="true">
-      <element uuid="556e08f3-bf5a-4d39-88e5-f795db5db817" manual="true">
+    <element uuid="04a307ed-bcca-41eb-a823-164778fec403" manual="true">
+      <element uuid="2393798f-5fc6-4e0c-ac87-71ee5c3be64a" manual="true">
         <bo>
           <seg>pvg</seg>
           <seg>Deployment_Properties::Actual_Connection_Binding</seg>
-          <seg>f999c866-cde5-4b80-b49e-cdd5f0766704</seg>
+          <seg>c377b736-2542-49cb-b181-88326f89a267</seg>
         </bo>
       </element>
       <bo>
@@ -387,12 +391,12 @@
         <seg>in_camera_control : SensorSubsystem_Impl_Instance.camera_controls -> SensorSubsystem_Impl_Instance.camera_controller.camera_controls</seg>
       </bo>
     </element>
-    <element uuid="503a2980-8d95-45d1-b853-7718d46956ad" manual="true">
-      <element uuid="5236e55b-6be5-4976-9844-8a086b7fc497" manual="true">
+    <element uuid="b4e5ecb1-0eab-4430-83ae-80cbbfd8d4a1" manual="true">
+      <element uuid="34b9b8cd-4af5-4f79-b8d7-3cfbaa10ece5" manual="true">
         <bo>
           <seg>pvg</seg>
           <seg>Deployment_Properties::Actual_Connection_Binding</seg>
-          <seg>f999c866-cde5-4b80-b49e-cdd5f0766704</seg>
+          <seg>c377b736-2542-49cb-b181-88326f89a267</seg>
         </bo>
       </element>
       <bo>
@@ -401,12 +405,12 @@
         <seg>out_camera_feed : SensorSubsystem_Impl_Instance.camera_controller.camera_feeds -> SensorSubsystem_Impl_Instance.camera_feeds</seg>
       </bo>
     </element>
-    <element uuid="dc46cafc-dcff-4c0c-b24b-decba440ad5a" manual="true">
-      <element uuid="310732db-fffd-423c-b897-0606b476d52c" manual="true">
+    <element uuid="c7ab0376-ea31-4aa7-bbdc-241ce26319a4" manual="true">
+      <element uuid="9d7e6bcc-02f2-4e0a-afaf-c55f1f64b001" manual="true">
         <bo>
           <seg>pvg</seg>
           <seg>Deployment_Properties::Actual_Connection_Binding</seg>
-          <seg>f999c866-cde5-4b80-b49e-cdd5f0766704</seg>
+          <seg>c377b736-2542-49cb-b181-88326f89a267</seg>
         </bo>
       </element>
       <bo>
@@ -415,37 +419,45 @@
         <seg>out_detected_movements : SensorSubsystem_Impl_Instance.movement_detector_controller.detected_movements -> SensorSubsystem_Impl_Instance.detected_movements</seg>
       </bo>
     </element>
-    <element uuid="85414b89-4d2a-4bd5-8523-c67f7bf9644c" manual="true" dockArea="left">
+    <element uuid="a1bf4004-674d-4afc-b67b-dc5f7f9ac6f9" manual="true" dockArea="right">
       <bo>
         <seg>org.osate.ge.diagrams.instance</seg>
         <seg>feature_instance</seg>
         <seg>camera_controls</seg>
       </bo>
-      <position y="389.0"/>
+      <position x="1686.4387969970703" y="401.0"/>
     </element>
-    <element uuid="07454fb2-88dc-4903-80b0-bfb9d599e4cf" manual="true" dockArea="right">
+    <element uuid="97960ad0-1d2c-4edc-a80c-c8b52381a98c" manual="true" dockArea="right">
       <bo>
         <seg>org.osate.ge.diagrams.instance</seg>
         <seg>feature_instance</seg>
         <seg>camera_feeds</seg>
       </bo>
-      <position x="1700.8476791381836" y="355.6666666666667"/>
+      <position x="1700.5078201293945" y="356.0"/>
     </element>
-    <element uuid="9b0c1cd1-5667-4d13-87c7-12edb0bdc7cb" manual="true" dockArea="right">
+    <element uuid="0f169e74-c206-4da7-946e-c05d533b1037" manual="true" dockArea="right">
+      <bo>
+        <seg>org.osate.ge.diagrams.instance</seg>
+        <seg>feature_instance</seg>
+        <seg>control_bus</seg>
+      </bo>
+      <position x="1716.0677185058594" y="260.0"/>
+    </element>
+    <element uuid="83a25963-448a-4f55-863a-56b54da3fb6b" manual="true" dockArea="right">
       <bo>
         <seg>org.osate.ge.diagrams.instance</seg>
         <seg>feature_instance</seg>
         <seg>detected_movements</seg>
       </bo>
-      <position x="1657.8593826293945" y="53.833333333333336"/>
+      <position x="1657.5195236206055" y="54.0"/>
     </element>
     <bo>
       <seg>org.osate.ge.diagrams.instance</seg>
       <seg>system_instance</seg>
       <seg>/alarm_system/instances/sensorsubsystem_sensorsubsystem_impl_instance.aaxl2</seg>
     </bo>
-    <position x="10.0" y="-7.105427357601002E-15"/>
-    <size width="1797.339859008789" height="560.0"/>
+    <position/>
+    <size width="1797.0" height="460.0"/>
   </element>
   <config type="structure" connectionPrimaryLabelsVisible="false">
     <enabledAadlProperties>

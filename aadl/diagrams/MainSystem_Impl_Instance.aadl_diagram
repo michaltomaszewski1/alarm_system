@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="ASCII"?>
 <diagram:Diagram xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:diagram="http://osate.org/diagram" formatVersion="7">
-  <element uuid="effcdcee-c082-43cd-973c-7e4f42b691be" manual="true">
-    <element uuid="02089f05-a7ef-45ab-82b4-1e8f66e8ff84" manual="true">
-      <element uuid="3cb7e922-d19c-4aea-9971-20a8b76b160f" manual="true" dockArea="left">
+  <element uuid="08e7beb9-73aa-43d9-af59-485d0ad9f9cc" manual="true">
+    <element uuid="6758a55d-0464-4d63-a660-d6b8b159eff5" manual="true">
+      <element uuid="2ac307b5-df49-40fb-8c6c-53c81b7a394a" manual="true" dockArea="left">
         <bo>
           <seg>org.osate.ge.diagrams.instance</seg>
           <seg>feature_instance</seg>
@@ -10,7 +10,7 @@
         </bo>
         <position y="10.0"/>
       </element>
-      <element uuid="1bbce9f6-c124-4ccd-9879-e9a907a9cfed" manual="true" dockArea="left">
+      <element uuid="ba8ebcdd-2f40-4e1e-9459-07e1355d8e17" manual="true" dockArea="left">
         <bo>
           <seg>org.osate.ge.diagrams.instance</seg>
           <seg>feature_instance</seg>
@@ -26,32 +26,32 @@
       <position x="804.3385620117188" y="54.66666666666667"/>
       <size width="270.1536331176758" height="110.0"/>
     </element>
-    <element uuid="5cee1f4d-cb39-4d7a-b093-c714debb0929" manual="true">
-      <element uuid="43c80e1a-64d7-4746-b280-1e867361c539" manual="true" dockArea="left">
+    <element uuid="a59f0cbe-174c-4f67-82b7-62cfcb8ff6a2" manual="true">
+      <element uuid="8b024881-36dd-4990-b332-332e45684daf" manual="true" dockArea="left">
         <bo>
           <seg>org.osate.ge.diagrams.instance</seg>
           <seg>feature_instance</seg>
-          <seg>camera_control</seg>
-        </bo>
-        <position y="10.0"/>
-      </element>
-      <element uuid="64cad521-4541-42d0-b9a4-f56361df6277" manual="true" dockArea="left">
-        <bo>
-          <seg>org.osate.ge.diagrams.instance</seg>
-          <seg>feature_instance</seg>
-          <seg>camera_feed</seg>
+          <seg>camera_controls</seg>
         </bo>
         <position y="110.0"/>
       </element>
-      <element uuid="f5288456-4f9e-4a0f-8704-7276abe5ec1f" manual="true" dockArea="left">
+      <element uuid="34d73a47-fd7c-4d0a-91c1-680f7a296c14" manual="true" dockArea="left">
+        <bo>
+          <seg>org.osate.ge.diagrams.instance</seg>
+          <seg>feature_instance</seg>
+          <seg>camera_feeds</seg>
+        </bo>
+        <position y="60.0"/>
+      </element>
+      <element uuid="e86c3d60-1741-43f8-8872-9c8af9255c09" manual="true" dockArea="left">
         <bo>
           <seg>org.osate.ge.diagrams.instance</seg>
           <seg>feature_instance</seg>
           <seg>detected_movements</seg>
         </bo>
-        <position y="60.0"/>
+        <position y="10.0"/>
       </element>
-      <element uuid="b1c0238e-c84e-4068-bbb2-5f25267e83a0" manual="true" dockArea="right">
+      <element uuid="1018f596-a1e7-4b5d-b087-68fe13ac1288" manual="true" dockArea="right">
         <bo>
           <seg>org.osate.ge.diagrams.instance</seg>
           <seg>feature_instance</seg>
@@ -59,7 +59,7 @@
         </bo>
         <position x="287.8216247558594" y="26.666666666666668"/>
       </element>
-      <element uuid="228f8801-2e68-4451-b5cc-ea34172dc235" manual="true" dockArea="right">
+      <element uuid="f210aae6-1da9-4132-ac06-9bb67b4135e8" manual="true" dockArea="right">
         <bo>
           <seg>org.osate.ge.diagrams.instance</seg>
           <seg>feature_instance</seg>
@@ -75,30 +75,30 @@
       <position x="410.3958435058594" y="38.0"/>
       <size width="373.9427185058594" height="160.0"/>
     </element>
-    <element uuid="0b546f23-34b2-46cc-a2e6-4c5a74f1e4cd" manual="true">
-      <element uuid="17bce679-201f-496f-8d0c-b3a5a2a3ef30" manual="true" dockArea="right">
+    <element uuid="5a480a59-f6ea-4504-9bfd-17c4bc3d0ee9" manual="true">
+      <element uuid="fa2cd29f-70eb-4cf2-b9dd-cc1a4bb4f471" manual="true" dockArea="right">
         <bo>
           <seg>org.osate.ge.diagrams.instance</seg>
           <seg>feature_instance</seg>
-          <seg>camera_control</seg>
+          <seg>camera_controls</seg>
         </bo>
-        <position x="274.5013084411621" y="10.0"/>
+        <position x="267.83464431762695" y="110.0"/>
       </element>
-      <element uuid="2446da4a-684e-4cf1-b0e1-77fc6e6b7892" manual="true" dockArea="right">
+      <element uuid="a2f60ee7-a9d7-4b84-885c-d75b9e466e20" manual="true" dockArea="right">
         <bo>
           <seg>org.osate.ge.diagrams.instance</seg>
           <seg>feature_instance</seg>
-          <seg>camera_feed</seg>
+          <seg>camera_feeds</seg>
         </bo>
-        <position x="288.5703315734863" y="110.0"/>
+        <position x="281.9036674499512" y="60.0"/>
       </element>
-      <element uuid="968f86f2-cd4b-4eae-8dfa-d6768c111d91" manual="true" dockArea="right">
+      <element uuid="1e1bbcb7-24b8-42eb-ab0c-5173bd5fb2f3" manual="true" dockArea="right">
         <bo>
           <seg>org.osate.ge.diagrams.instance</seg>
           <seg>feature_instance</seg>
           <seg>detected_movements</seg>
         </bo>
-        <position x="238.9153709411621" y="60.0"/>
+        <position x="238.9153709411621" y="10.0"/>
       </element>
       <bo>
         <seg>org.osate.ge.diagrams.instance</seg>
@@ -108,44 +108,44 @@
       <position x="12.0" y="38.0"/>
       <size width="378.39584732055664" height="160.0"/>
     </element>
-    <element uuid="1dd3b273-632f-459e-b95a-81eeb9e323ec" manual="true">
+    <element uuid="75921e4e-7093-46a1-bf72-247418475b55" manual="true">
       <bo>
         <seg>org.osate.ge.diagrams.instance</seg>
         <seg>connection_reference</seg>
-        <seg>camera_control : MainSystem_Impl_Instance.Control.camera_control -> MainSystem_Impl_Instance.Sensor.camera_control</seg>
+        <seg> : MainSystem_Impl_Instance.Control.camera_controls -> MainSystem_Impl_Instance.Sensor.camera_controls</seg>
       </bo>
     </element>
-    <element uuid="e299404e-dfc3-4830-9dc0-f2bc87f9b1d6" manual="true">
+    <element uuid="e7aaa496-37a0-4deb-ba4a-e467c786a1a8" manual="true">
       <bo>
         <seg>org.osate.ge.diagrams.instance</seg>
         <seg>connection_reference</seg>
-        <seg>camera_feed : MainSystem_Impl_Instance.Sensor.camera_feed -> MainSystem_Impl_Instance.Control.camera_feed</seg>
+        <seg> : MainSystem_Impl_Instance.Control.door_control -> MainSystem_Impl_Instance.Action.door_control</seg>
       </bo>
     </element>
-    <element uuid="2d482da5-29a9-4f69-8cbd-b656606627bc" manual="true">
+    <element uuid="63055547-0edc-42b7-bbec-695194f268fa" manual="true">
       <bo>
         <seg>org.osate.ge.diagrams.instance</seg>
         <seg>connection_reference</seg>
-        <seg>detected_movements : MainSystem_Impl_Instance.Sensor.detected_movements -> MainSystem_Impl_Instance.Control.detected_movements</seg>
-      </bo>
-    </element>
-    <element uuid="49a7dd63-d440-4178-8349-255829614714" manual="true">
-      <bo>
-        <seg>org.osate.ge.diagrams.instance</seg>
-        <seg>connection_reference</seg>
-        <seg>door_control : MainSystem_Impl_Instance.Control.door_control -> MainSystem_Impl_Instance.Action.door_control</seg>
-      </bo>
-    </element>
-    <element uuid="182f45c6-acf3-464d-91c9-e523ab1fc7d2" manual="true">
-      <bo>
-        <seg>org.osate.ge.diagrams.instance</seg>
-        <seg>connection_reference</seg>
-        <seg>trigger_alarm : MainSystem_Impl_Instance.Control.trigger_alarm -> MainSystem_Impl_Instance.Action.trigger_alarm</seg>
+        <seg> : MainSystem_Impl_Instance.Control.trigger_alarm -> MainSystem_Impl_Instance.Action.trigger_alarm</seg>
       </bo>
       <bendpoints>
         <point x="794.3385620117188" y="163.33331298828125"/>
         <point x="794.3385620117188" y="146.66668701171875"/>
       </bendpoints>
+    </element>
+    <element uuid="1bcd009a-c523-4264-b03d-904d910a6bbe" manual="true">
+      <bo>
+        <seg>org.osate.ge.diagrams.instance</seg>
+        <seg>connection_reference</seg>
+        <seg> : MainSystem_Impl_Instance.Sensor.camera_feeds -> MainSystem_Impl_Instance.Control.camera_feeds</seg>
+      </bo>
+    </element>
+    <element uuid="85be8e0e-ba61-4010-94aa-565679568058" manual="true">
+      <bo>
+        <seg>org.osate.ge.diagrams.instance</seg>
+        <seg>connection_reference</seg>
+        <seg> : MainSystem_Impl_Instance.Sensor.detected_movements -> MainSystem_Impl_Instance.Control.detected_movements</seg>
+      </bo>
     </element>
     <bo>
       <seg>org.osate.ge.diagrams.instance</seg>

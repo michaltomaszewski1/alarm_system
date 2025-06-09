@@ -6,62 +6,54 @@ System modeluje działanie systemu alarmowego w budynku firmy. Pozwala on na rę
 
 # Komponenty systemu alarmowego
 
-## Główne komponenty systemu (wg AADL)
+### 1. ControlSubsystem
 
-- **ControlSubsystem**
-  - Moduł odpowiedzialny za logikę sterowania systemem alarmowym.
-  - Odbiera dane o wykrytym ruchu i obrazie z kamer.
-  - Steruje kamerą, wyzwala alarm oraz kontroluje drzwi.
-  - Interfejsy:
-    - `detected_movements` (wejście)
-    - `camera_feeds` (wejście)
-    - `camera_controls` (wyjście)
-    - `trigger_alarm` (wyjście)
-    - `door_control` (wyjście)
+- **ArmingKeypad** – urządzenie do uzbrajania/rozbrajania alarmu.
+- **CameraFeedStorage** – pamięć na nagrania z kamer.
+- **CameraControlPanel** – panel sterowania kamerą (odbiera obraz, wysyła polecenia sterujące).
+- **ControlProcess** – proces obsługujący logikę detekcji i akcji (DetectionThread, ActionThread).
+- **SystemController** – procesor zarządzający komunikacją z SensorSubsystem i ActionSubsystem.
+- **sensor_eth, action_eth** – magistrale Ethernet do komunikacji z SensorSubsystem i ActionSubsystem.
 
-- **SensorSubsystem**
-  - Odpowiada za zbieranie danych z urządzeń detekcyjnych i przekazywanie ich do ControlSubsystem.
-  - Składa się z:
-    - **detector1**: Czujnik ruchu (MovementDetector)
-    - **detector2**: Czujnik ruchu (MovementDetector)
-    - **camera1**: Kamera monitoringu (Camera)
-    - **movement_detector_controller**: Kontroler czujników ruchu
-    - **camera_controller**: Kontroler kamery
-    - **Ethernet**: Magistrale komunikacyjne
-  - Interfejsy:
-    - `detected_movements` (wyjście)
-    - `camera_feeds` (wyjście)
-    - `camera_controls` (wejście)
+### 2. SensorSubsystem
 
-- **ActionSubsystem**
-  - Moduł wykonawczy realizujący polecenia z ControlSubsystem.
-  - Obsługuje wyzwalanie alarmu i sterowanie drzwiami.
-  - Interfejsy:
-    - `trigger_alarm` (wejście)
-    - `door_control` (wejście)
+- **detector1, detector2** – czujniki ruchu (MovementDetector).
+- **camera1** – kamera monitoringu (Camera).
+- **movement_detector_controller** – kontroler czujników ruchu.
+- **camera_controller** – kontroler kamery.
+- **detector_eth, camera_eth, control_eth** – magistrale Ethernet do komunikacji między urządzeniami i kontrolerami.
 
-## Urządzenia i magistrale
+### 3. ActionSubsystem
 
-- **MovementDetector** – urządzenie wykrywające ruch, komunikujące się przez magistralę Ethernet.
-- **Camera** – kamera monitoringu, komunikująca się przez magistralę Ethernet.
-- **MovementDetectorController** – kontroler obsługujący czujniki ruchu.
-- **CameraController** – kontroler obsługujący kamerę.
-- **Ethernet** – wspólna magistrala komunikacyjna dla urządzeń i kontrolerów.
+- **door1, door2** – zamki drzwi (DoorLock).
+- **siren** – syrena alarmowa (AlarmSiren).
+- **door_controller** – kontroler drzwi (zarządza dwoma zamkami).
+- **control_eth, door_eth** – magistrale Ethernet do komunikacji z urządzeniami wykonawczymi.
 
-## Połączenia między komponentami
+---
+
+### Połączenia głównych komponentów
 
 - **SensorSubsystem** przekazuje:
-  - `detected_movements` do **ControlSubsystem**
-  - `camera_feeds` do **ControlSubsystem**
+- `detected_movements` do **ControlSubsystem**
+- `camera_feeds` do **ControlSubsystem**
 
 - **ControlSubsystem** przekazuje:
-  - `camera_controls` do **SensorSubsystem**
-  - `trigger_alarm` do **ActionSubsystem**
-  - `door_control` do **ActionSubsystem**
+- `camera_controls` do **SensorSubsystem**
+- `trigger_alarm` do **ActionSubsystem**
+- `door_control` do **ActionSubsystem**
+
 
 ---
 # Diagramy
 > MainSystem
 ![](diagrams/main.svg)
+
 > SensorSubsystem
 ![](diagrams/sensor.svg)
+
+>ControlSubsystem
+![](diagrams/control.svg)
+
+>ActionSubsystem
+![](diagrams/action.svg)

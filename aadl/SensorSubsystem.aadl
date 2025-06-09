@@ -19,7 +19,8 @@ public
 	
 	processor MovementDetectorController
 		features
-			trigger: in data port;
+			trigger1: in data port;
+			trigger2: in data port;
 			detected_movements: out data port;
 			in_eth: requires bus access Ethernet;
 			out_eth: requires bus access Ethernet;
@@ -40,6 +41,7 @@ public
 			detected_movements: out data port;
 			camera_feeds: out data port;
 			camera_controls: in data port;
+			control_bus: provides bus access Ethernet;
 	end SensorSubsystem;
 	
 	system implementation SensorSubsystem.Impl
@@ -66,9 +68,10 @@ public
 			out_detected_movements: port movement_detector_controller.detected_movements -> detected_movements;
 			out_camera_feed: port camera_controller.camera_feeds -> camera_feeds;
 			in_camera_control: port camera_controls -> camera_controller.camera_controls;
+			control_eth_access: bus access control_bus <-> control_eth;
 			
-			detector1_trigger: port detector1.triggered -> movement_detector_controller.trigger;
-			detector2_trigger: port detector2.triggered -> movement_detector_controller.trigger;
+			detector1_trigger: port detector1.triggered -> movement_detector_controller.trigger1;
+			detector2_trigger: port detector2.triggered -> movement_detector_controller.trigger2;
 			camera1_feed: port camera1.feed -> camera_controller.camera_feed;
 			camera1_control: port camera_controller.camera_control -> camera1.control;
 			

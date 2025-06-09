@@ -1,0 +1,534 @@
+<?xml version="1.0" encoding="ASCII"?>
+<diagram:Diagram xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:diagram="http://osate.org/diagram" formatVersion="7">
+  <element uuid="cd41e5f4-a620-412d-9f78-3fa85feff782" manual="true">
+    <element uuid="a9f70b50-15b2-46b9-bb2d-e92a20deaba9" manual="true">
+      <bo>
+        <seg>org.osate.ge.diagrams.instance</seg>
+        <seg>component_instance</seg>
+        <seg>action_eth</seg>
+      </bo>
+      <position x="1020.0" y="260.0"/>
+      <size width="114.0" height="35.0"/>
+    </element>
+    <element uuid="6d041e28-214b-44e3-9d3b-7de30e24b109" manual="true">
+      <element uuid="ccaac6d7-6d81-46f0-9473-b9b391cf8f76" manual="true" dockArea="bottom">
+        <bo>
+          <seg>org.osate.ge.diagrams.instance</seg>
+          <seg>feature_instance</seg>
+          <seg>arm_disarm</seg>
+        </bo>
+        <position x="50.0" y="56.0"/>
+      </element>
+      <bo>
+        <seg>org.osate.ge.diagrams.instance</seg>
+        <seg>component_instance</seg>
+        <seg>arming_keypad</seg>
+      </bo>
+      <position x="400.0" y="310.0"/>
+      <size width="152.3841094970703" height="80.0"/>
+    </element>
+    <element uuid="f39e08ac-74b2-4dc8-acdf-21ac23eecfaa" manual="true">
+      <element uuid="183d5df3-4246-49e8-bd71-af806ef749a7" manual="true" dockArea="left">
+        <bo>
+          <seg>org.osate.ge.diagrams.instance</seg>
+          <seg>feature_instance</seg>
+          <seg>camera_controls</seg>
+        </bo>
+        <position y="55.0"/>
+      </element>
+      <element uuid="4ccffca5-1948-43d8-97a0-421bc3f9412d" manual="true" dockArea="left">
+        <bo>
+          <seg>org.osate.ge.diagrams.instance</seg>
+          <seg>feature_instance</seg>
+          <seg>camera_feeds</seg>
+        </bo>
+        <position y="10.0"/>
+      </element>
+      <element uuid="dc777bd4-8f4e-42cd-a392-7e6f26738694" manual="true" dockArea="left">
+        <bo>
+          <seg>org.osate.ge.diagrams.instance</seg>
+          <seg>feature_instance</seg>
+          <seg>sensor_eth</seg>
+        </bo>
+        <position y="100.0"/>
+      </element>
+      <element uuid="13588cb1-7ffd-4aee-8599-7207d190eda8" manual="true" dockArea="right">
+        <bo>
+          <seg>org.osate.ge.diagrams.instance</seg>
+          <seg>feature_instance</seg>
+          <seg>storage_eth</seg>
+        </bo>
+        <position x="322.5768280029297" y="12.0"/>
+      </element>
+      <bo>
+        <seg>org.osate.ge.diagrams.instance</seg>
+        <seg>component_instance</seg>
+        <seg>camera_control_panel</seg>
+      </bo>
+      <position x="334.0" y="38.0"/>
+      <size width="405.0" height="140.0"/>
+    </element>
+    <element uuid="af0177f3-4a93-4c01-943b-5626e3bc3d43" manual="true">
+      <element uuid="d64b788a-4617-4873-8c5a-a5e66ae70040" manual="true" dockArea="left">
+        <bo>
+          <seg>org.osate.ge.diagrams.instance</seg>
+          <seg>feature_instance</seg>
+          <seg>eth</seg>
+        </bo>
+        <position y="10.0"/>
+      </element>
+      <bo>
+        <seg>org.osate.ge.diagrams.instance</seg>
+        <seg>component_instance</seg>
+        <seg>camera_feed_storage</seg>
+      </bo>
+      <position x="800.0" y="40.0"/>
+      <size width="243.0" height="60.0"/>
+    </element>
+    <element uuid="f027f511-7273-4e76-8af3-b5e8827b3add" manual="true">
+      <element uuid="5e2e4cec-255d-4807-a7b1-f32eccd4b5e4" manual="true">
+        <element uuid="ea5a054b-d94a-4258-8aa9-ec225612923d" manual="true" dockArea="left">
+          <bo>
+            <seg>org.osate.ge.diagrams.instance</seg>
+            <seg>feature_instance</seg>
+            <seg>detected</seg>
+          </bo>
+          <position y="90.0"/>
+        </element>
+        <element uuid="30549c71-e1c9-446c-a03a-4bde0c0c1fda" manual="true" dockArea="right">
+          <bo>
+            <seg>org.osate.ge.diagrams.instance</seg>
+            <seg>feature_instance</seg>
+            <seg>door_control</seg>
+          </bo>
+          <position x="103.87890625" y="85.0"/>
+        </element>
+        <element uuid="42c5faf7-ade3-4213-a7bc-cc091899ede0" manual="true" dockArea="right">
+          <bo>
+            <seg>org.osate.ge.diagrams.instance</seg>
+            <seg>feature_instance</seg>
+            <seg>trigger_alarm</seg>
+          </bo>
+          <position x="99.45182800292969" y="40.0"/>
+        </element>
+        <element uuid="05bb0d24-75bf-4439-b3f7-e51ff2efbed3" manual="true">
+          <bo>
+            <seg>pvg</seg>
+            <seg>Deployment_Properties::Actual_Processor_Binding</seg>
+            <seg>ca9f363f-e63a-4df0-97d7-816b99fe773a</seg>
+          </bo>
+        </element>
+        <bo>
+          <seg>org.osate.ge.diagrams.instance</seg>
+          <seg>component_instance</seg>
+          <seg>action</seg>
+        </bo>
+        <position x="380.0" y="30.0"/>
+        <size width="190.0" height="130.0"/>
+      </element>
+      <element uuid="2d4f83ec-285a-420e-bd70-5b1c2d6bcd8c" manual="true">
+        <element uuid="09656971-e48c-4fa9-b502-1a04b49ce55e" manual="true" dockArea="left">
+          <bo>
+            <seg>org.osate.ge.diagrams.instance</seg>
+            <seg>feature_instance</seg>
+            <seg>arm_disarm</seg>
+          </bo>
+          <position y="30.0"/>
+        </element>
+        <element uuid="7e5719f5-66b0-4bb6-8faa-29c2004cdc0e" manual="true" dockArea="right">
+          <bo>
+            <seg>org.osate.ge.diagrams.instance</seg>
+            <seg>feature_instance</seg>
+            <seg>detected</seg>
+          </bo>
+          <position x="139.48047637939453" y="90.0"/>
+        </element>
+        <element uuid="b8f4a6c9-17e9-4015-89a8-e7e22a1b8be8" manual="true" dockArea="left">
+          <bo>
+            <seg>org.osate.ge.diagrams.instance</seg>
+            <seg>feature_instance</seg>
+            <seg>detected_movements</seg>
+          </bo>
+          <position y="75.0"/>
+        </element>
+        <element uuid="7206f348-5564-44ab-9206-3527b412c75d" manual="true">
+          <bo>
+            <seg>pvg</seg>
+            <seg>Deployment_Properties::Actual_Processor_Binding</seg>
+            <seg>ca9f363f-e63a-4df0-97d7-816b99fe773a</seg>
+          </bo>
+        </element>
+        <bo>
+          <seg>org.osate.ge.diagrams.instance</seg>
+          <seg>component_instance</seg>
+          <seg>detection</seg>
+        </bo>
+        <position x="137.3671836853027" y="30.0"/>
+        <size width="202.63281631469727" height="130.0"/>
+      </element>
+      <element uuid="0df5756c-7f2f-40b7-9ec5-fc8066e4a2e9" manual="true">
+        <bo>
+          <seg>org.osate.ge.diagrams.instance</seg>
+          <seg>connection_reference</seg>
+          <seg>detected_proc_con : ControlSubsystem_Impl_Instance.control_process.detection.detected -> ControlSubsystem_Impl_Instance.control_process.action.detected</seg>
+        </bo>
+      </element>
+      <element uuid="0a075c74-7efa-4473-b5a6-65905a4821b5" manual="true" dockArea="top">
+        <bo>
+          <seg>org.osate.ge.diagrams.instance</seg>
+          <seg>feature_instance</seg>
+          <seg>arm_disarm</seg>
+        </bo>
+        <position x="49.99999999999997"/>
+      </element>
+      <element uuid="c96563dd-97ff-4eaf-af5f-1d16569cadb4" manual="true" dockArea="left">
+        <bo>
+          <seg>org.osate.ge.diagrams.instance</seg>
+          <seg>feature_instance</seg>
+          <seg>detected_movements</seg>
+        </bo>
+        <position y="100.0"/>
+      </element>
+      <element uuid="b863bfee-80fd-4297-b9b1-7cce7f619c88" manual="true" dockArea="right">
+        <bo>
+          <seg>org.osate.ge.diagrams.instance</seg>
+          <seg>feature_instance</seg>
+          <seg>door_control</seg>
+        </bo>
+        <position x="613.87890625" y="60.0"/>
+      </element>
+      <element uuid="0407073d-8a91-43e1-aa90-658162cf1566" manual="true" dockArea="right">
+        <bo>
+          <seg>org.osate.ge.diagrams.instance</seg>
+          <seg>feature_instance</seg>
+          <seg>trigger_alarm</seg>
+        </bo>
+        <position x="609.4518280029297" y="10.0"/>
+      </element>
+      <element uuid="960fc766-2cc1-4055-967e-a2f1b270c7c4" manual="true">
+        <bo>
+          <seg>pvg</seg>
+          <seg>Deployment_Properties::Actual_Processor_Binding</seg>
+          <seg>ca9f363f-e63a-4df0-97d7-816b99fe773a</seg>
+        </bo>
+      </element>
+      <bo>
+        <seg>org.osate.ge.diagrams.instance</seg>
+        <seg>component_instance</seg>
+        <seg>control_process</seg>
+      </bo>
+      <position x="400.0" y="410.0"/>
+      <size width="700.0" height="160.0"/>
+    </element>
+    <element uuid="e198c3d2-1535-4487-883f-c263d9b7ddde" manual="true">
+      <bo>
+        <seg>org.osate.ge.diagrams.instance</seg>
+        <seg>component_instance</seg>
+        <seg>sensor_eth</seg>
+      </bo>
+      <position x="160.0" y="220.0"/>
+      <size width="118.0" height="50.0"/>
+    </element>
+    <element uuid="ca9f363f-e63a-4df0-97d7-816b99fe773a" manual="true">
+      <element uuid="f1690800-650b-4ede-acdd-bf1f722d74e8" manual="true" dockArea="right">
+        <bo>
+          <seg>org.osate.ge.diagrams.instance</seg>
+          <seg>feature_instance</seg>
+          <seg>action_bus</seg>
+        </bo>
+        <position x="241.50782012939453" y="19.999999999999943"/>
+      </element>
+      <element uuid="2657aa56-b841-41ad-822b-6ff362b548b4" manual="true" dockArea="left">
+        <bo>
+          <seg>org.osate.ge.diagrams.instance</seg>
+          <seg>feature_instance</seg>
+          <seg>sensor_bus</seg>
+        </bo>
+        <position y="10.0"/>
+      </element>
+      <bo>
+        <seg>org.osate.ge.diagrams.instance</seg>
+        <seg>component_instance</seg>
+        <seg>system_controller</seg>
+      </bo>
+      <position x="470.0000000000001" y="220.00000000000003"/>
+      <size width="318.0" height="60.0"/>
+    </element>
+    <element uuid="5a262bbc-b87c-4a01-892c-17de68de000b" manual="true">
+      <bo>
+        <seg>org.osate.ge.diagrams.instance</seg>
+        <seg>connection_reference</seg>
+        <seg>action_controller_con : ControlSubsystem_Impl_Instance.system_controller.action_bus -> ControlSubsystem_Impl_Instance.action_eth</seg>
+      </bo>
+    </element>
+    <element uuid="aa5ca913-0c82-400b-a01b-927954e33303" manual="true">
+      <bo>
+        <seg>org.osate.ge.diagrams.instance</seg>
+        <seg>connection_reference</seg>
+        <seg>action_out_con : ControlSubsystem_Impl_Instance.action_eth -> ControlSubsystem_Impl_Instance.action_bus</seg>
+      </bo>
+    </element>
+    <element uuid="751b5aaf-5581-463d-8cf1-8e9dd217bc32" manual="true">
+      <bo>
+        <seg>org.osate.ge.diagrams.instance</seg>
+        <seg>connection_reference</seg>
+        <seg>arm_disarm_con : ControlSubsystem_Impl_Instance.arming_keypad.arm_disarm -> ControlSubsystem_Impl_Instance.control_process.arm_disarm</seg>
+      </bo>
+    </element>
+    <element uuid="0ab3ce9b-4354-4260-bf7d-bff621cf0f58" manual="true">
+      <bo>
+        <seg>org.osate.ge.diagrams.instance</seg>
+        <seg>connection_reference</seg>
+        <seg>arm_disarm_proc_con : ControlSubsystem_Impl_Instance.control_process.arm_disarm -> ControlSubsystem_Impl_Instance.control_process.detection.arm_disarm</seg>
+      </bo>
+    </element>
+    <element uuid="fc8fbd27-2347-4964-a165-8831da84f9ba" manual="true">
+      <element uuid="26cb3338-68e0-4ec8-899a-6c5509191826" manual="true">
+        <bo>
+          <seg>pvg</seg>
+          <seg>Deployment_Properties::Actual_Connection_Binding</seg>
+          <seg>e198c3d2-1535-4487-883f-c263d9b7ddde</seg>
+        </bo>
+      </element>
+      <bo>
+        <seg>org.osate.ge.diagrams.instance</seg>
+        <seg>connection_reference</seg>
+        <seg>camera_controls_con : ControlSubsystem_Impl_Instance.camera_control_panel.camera_controls -> ControlSubsystem_Impl_Instance.camera_controls</seg>
+      </bo>
+    </element>
+    <element uuid="48353fc0-6689-404b-a3ea-b581ed19e82d" manual="true">
+      <bo>
+        <seg>org.osate.ge.diagrams.instance</seg>
+        <seg>connection_reference</seg>
+        <seg>camera_feed_storage_con : ControlSubsystem_Impl_Instance.camera_control_panel.storage_eth -> ControlSubsystem_Impl_Instance.camera_feed_storage.eth</seg>
+      </bo>
+    </element>
+    <element uuid="6045b809-9cc5-494f-bb2f-e1edc16dad86" manual="true">
+      <bo>
+        <seg>org.osate.ge.diagrams.instance</seg>
+        <seg>connection_reference</seg>
+        <seg>camera_feed_storage_con : ControlSubsystem_Impl_Instance.camera_feed_storage.eth -> ControlSubsystem_Impl_Instance.camera_control_panel.storage_eth</seg>
+      </bo>
+    </element>
+    <element uuid="dfb4322c-f6f1-4372-be4f-75ae23ddecc6" manual="true">
+      <element uuid="83f2e31f-8bbd-441d-ba03-7b4d573b884e" manual="true">
+        <bo>
+          <seg>pvg</seg>
+          <seg>Deployment_Properties::Actual_Connection_Binding</seg>
+          <seg>e198c3d2-1535-4487-883f-c263d9b7ddde</seg>
+        </bo>
+      </element>
+      <bo>
+        <seg>org.osate.ge.diagrams.instance</seg>
+        <seg>connection_reference</seg>
+        <seg>camera_feeds_con : ControlSubsystem_Impl_Instance.camera_feeds -> ControlSubsystem_Impl_Instance.camera_control_panel.camera_feeds</seg>
+      </bo>
+    </element>
+    <element uuid="433f5e17-8332-4e31-9ba2-e6735ebe41ff" manual="true">
+      <element uuid="904d79ff-c11c-403f-bde7-efd9fed42163" manual="true">
+        <bo>
+          <seg>pvg</seg>
+          <seg>Deployment_Properties::Actual_Connection_Binding</seg>
+          <seg>e198c3d2-1535-4487-883f-c263d9b7ddde</seg>
+        </bo>
+      </element>
+      <bo>
+        <seg>org.osate.ge.diagrams.instance</seg>
+        <seg>connection_reference</seg>
+        <seg>detected_movements_con : ControlSubsystem_Impl_Instance.detected_movements -> ControlSubsystem_Impl_Instance.control_process.detected_movements</seg>
+      </bo>
+    </element>
+    <element uuid="d3396874-f759-4f5e-b876-44653542053c" manual="true">
+      <element uuid="af42224b-9356-4f88-82ef-fc121f3da9bb" manual="true">
+        <bo>
+          <seg>pvg</seg>
+          <seg>Deployment_Properties::Actual_Connection_Binding</seg>
+          <seg>e198c3d2-1535-4487-883f-c263d9b7ddde</seg>
+        </bo>
+      </element>
+      <bo>
+        <seg>org.osate.ge.diagrams.instance</seg>
+        <seg>connection_reference</seg>
+        <seg>detected_movements_proc_con : ControlSubsystem_Impl_Instance.control_process.detected_movements -> ControlSubsystem_Impl_Instance.control_process.detection.detected_movements</seg>
+      </bo>
+    </element>
+    <element uuid="f2f137db-a38f-4f44-bc4a-59f93912d55f" manual="true">
+      <element uuid="b15d149c-851f-43e3-a1b3-b2251558fdc8" manual="true">
+        <bo>
+          <seg>pvg</seg>
+          <seg>Deployment_Properties::Actual_Connection_Binding</seg>
+          <seg>a9f70b50-15b2-46b9-bb2d-e92a20deaba9</seg>
+        </bo>
+      </element>
+      <bo>
+        <seg>org.osate.ge.diagrams.instance</seg>
+        <seg>connection_reference</seg>
+        <seg>door_control_con : ControlSubsystem_Impl_Instance.control_process.door_control -> ControlSubsystem_Impl_Instance.door_control</seg>
+      </bo>
+    </element>
+    <element uuid="41d83e6c-bb5a-49fa-af2d-cb67efbb5aae" manual="true">
+      <element uuid="f0298e07-508c-4310-a3af-18fb5d397446" manual="true">
+        <bo>
+          <seg>pvg</seg>
+          <seg>Deployment_Properties::Actual_Connection_Binding</seg>
+          <seg>a9f70b50-15b2-46b9-bb2d-e92a20deaba9</seg>
+        </bo>
+      </element>
+      <bo>
+        <seg>org.osate.ge.diagrams.instance</seg>
+        <seg>connection_reference</seg>
+        <seg>door_control_proc_con : ControlSubsystem_Impl_Instance.control_process.action.door_control -> ControlSubsystem_Impl_Instance.control_process.door_control</seg>
+      </bo>
+    </element>
+    <element uuid="d615c91f-1c94-41c9-8468-4e291f687e77" manual="true">
+      <bo>
+        <seg>org.osate.ge.diagrams.instance</seg>
+        <seg>connection_reference</seg>
+        <seg>sensor_camera_con : ControlSubsystem_Impl_Instance.camera_control_panel.sensor_eth -> ControlSubsystem_Impl_Instance.sensor_eth</seg>
+      </bo>
+    </element>
+    <element uuid="f8cde61b-04c4-468d-8b5a-49ac70ea678a" manual="true">
+      <bo>
+        <seg>org.osate.ge.diagrams.instance</seg>
+        <seg>connection_reference</seg>
+        <seg>sensor_camera_con : ControlSubsystem_Impl_Instance.sensor_eth -> ControlSubsystem_Impl_Instance.camera_control_panel.sensor_eth</seg>
+      </bo>
+    </element>
+    <element uuid="d7001591-be77-4088-ac37-2319eea7d54f" manual="true">
+      <bo>
+        <seg>org.osate.ge.diagrams.instance</seg>
+        <seg>connection_reference</seg>
+        <seg>sensor_controller_con : ControlSubsystem_Impl_Instance.sensor_eth -> ControlSubsystem_Impl_Instance.system_controller.sensor_bus</seg>
+      </bo>
+      <bendpoints>
+        <point x="112.0" y="256.0"/>
+      </bendpoints>
+    </element>
+    <element uuid="cd3033bb-d95f-446b-bda2-a3d3c656c978" manual="true">
+      <bo>
+        <seg>org.osate.ge.diagrams.instance</seg>
+        <seg>connection_reference</seg>
+        <seg>sensor_controller_con : ControlSubsystem_Impl_Instance.system_controller.sensor_bus -> ControlSubsystem_Impl_Instance.sensor_eth</seg>
+      </bo>
+    </element>
+    <element uuid="1cd3a5aa-240b-4cc4-b728-80636426256c" manual="true">
+      <bo>
+        <seg>org.osate.ge.diagrams.instance</seg>
+        <seg>connection_reference</seg>
+        <seg>sensor_out_con : ControlSubsystem_Impl_Instance.sensor_bus -> ControlSubsystem_Impl_Instance.sensor_eth</seg>
+      </bo>
+    </element>
+    <element uuid="43c6ba6e-83c5-4cbf-8410-13544180c3d7" manual="true">
+      <bo>
+        <seg>org.osate.ge.diagrams.instance</seg>
+        <seg>connection_reference</seg>
+        <seg>sensor_out_con : ControlSubsystem_Impl_Instance.sensor_eth -> ControlSubsystem_Impl_Instance.sensor_bus</seg>
+      </bo>
+      <bendpoints>
+        <point x="-188.0" y="234.0"/>
+      </bendpoints>
+    </element>
+    <element uuid="9415d35f-b3f7-4b06-a816-64730c05fb4a" manual="true">
+      <element uuid="2f02ceef-eafd-40cd-a570-8a895c6b19b1" manual="true">
+        <bo>
+          <seg>pvg</seg>
+          <seg>Deployment_Properties::Actual_Connection_Binding</seg>
+          <seg>a9f70b50-15b2-46b9-bb2d-e92a20deaba9</seg>
+        </bo>
+      </element>
+      <bo>
+        <seg>org.osate.ge.diagrams.instance</seg>
+        <seg>connection_reference</seg>
+        <seg>trigger_alarm_con : ControlSubsystem_Impl_Instance.control_process.trigger_alarm -> ControlSubsystem_Impl_Instance.trigger_alarm</seg>
+      </bo>
+    </element>
+    <element uuid="80569a22-72b0-4231-ad52-b91eda128b23" manual="true">
+      <element uuid="5b134ef6-1ec8-4a8e-ab71-9124548fc7db" manual="true">
+        <bo>
+          <seg>pvg</seg>
+          <seg>Deployment_Properties::Actual_Connection_Binding</seg>
+          <seg>a9f70b50-15b2-46b9-bb2d-e92a20deaba9</seg>
+        </bo>
+      </element>
+      <bo>
+        <seg>org.osate.ge.diagrams.instance</seg>
+        <seg>connection_reference</seg>
+        <seg>trigger_alarm_proc_con : ControlSubsystem_Impl_Instance.control_process.action.trigger_alarm -> ControlSubsystem_Impl_Instance.control_process.trigger_alarm</seg>
+      </bo>
+    </element>
+    <element uuid="3b43ef0c-38df-4c5c-bdde-c48c79581fe6" manual="true" dockArea="right">
+      <bo>
+        <seg>org.osate.ge.diagrams.instance</seg>
+        <seg>feature_instance</seg>
+        <seg>action_bus</seg>
+      </bo>
+      <position x="1338.5078201293945" y="240.0"/>
+    </element>
+    <element uuid="ea2a7262-1967-49d5-9fc9-036a762dc15e" manual="true" dockArea="left">
+      <bo>
+        <seg>org.osate.ge.diagrams.instance</seg>
+        <seg>feature_instance</seg>
+        <seg>camera_controls</seg>
+      </bo>
+      <position y="93.0"/>
+    </element>
+    <element uuid="b49033d5-69cd-40bb-a916-dd824c4ee3d3" manual="true" dockArea="left">
+      <bo>
+        <seg>org.osate.ge.diagrams.instance</seg>
+        <seg>feature_instance</seg>
+        <seg>camera_feeds</seg>
+      </bo>
+      <position y="48.0"/>
+    </element>
+    <element uuid="bd521268-dba8-4048-a904-2a8d961aad82" manual="true" dockArea="left">
+      <bo>
+        <seg>org.osate.ge.diagrams.instance</seg>
+        <seg>feature_instance</seg>
+        <seg>detected_movements</seg>
+      </bo>
+      <position y="510.0"/>
+    </element>
+    <element uuid="1554b664-8f8a-4b35-bfe9-e434fc65c990" manual="true" dockArea="right">
+      <bo>
+        <seg>org.osate.ge.diagrams.instance</seg>
+        <seg>feature_instance</seg>
+        <seg>door_control</seg>
+      </bo>
+      <position x="1328.87890625" y="470.0"/>
+    </element>
+    <element uuid="f6c1a6ef-5c23-486a-b3ff-c48e9f519c15" manual="true" dockArea="left">
+      <bo>
+        <seg>org.osate.ge.diagrams.instance</seg>
+        <seg>feature_instance</seg>
+        <seg>sensor_bus</seg>
+      </bo>
+      <position y="220.0"/>
+    </element>
+    <element uuid="8e917290-cf89-4169-809b-3ec142644edc" manual="true" dockArea="right">
+      <bo>
+        <seg>org.osate.ge.diagrams.instance</seg>
+        <seg>feature_instance</seg>
+        <seg>trigger_alarm</seg>
+      </bo>
+      <position x="1324.4518280029297" y="420.0"/>
+    </element>
+    <bo>
+      <seg>org.osate.ge.diagrams.instance</seg>
+      <seg>system_instance</seg>
+      <seg>/alarm_system/instances/controlsubsystem_controlsubsystem_impl_instance.aaxl2</seg>
+    </bo>
+    <position x="-350.0" y="-20.0"/>
+    <size width="1415.0" height="570.0"/>
+  </element>
+  <config type="structure" connectionPrimaryLabelsVisible="false">
+    <enabledAadlProperties>
+      <property>deployment_properties::actual_processor_binding</property>
+      <property>deployment_properties::actual_connection_binding</property>
+    </enabledAadlProperties>
+    <context>
+      <seg>org.osate.ge.diagrams.instance</seg>
+      <seg>system_instance</seg>
+      <seg>/alarm_system/instances/controlsubsystem_controlsubsystem_impl_instance.aaxl2</seg>
+    </context>
+  </config>
+</diagram:Diagram>

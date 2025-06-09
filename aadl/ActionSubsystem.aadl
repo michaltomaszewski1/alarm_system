@@ -1,14 +1,64 @@
 package ActionSubsystem
 public
 	
+	bus Ethernet
+	end Ethernet;
+	
+	device DoorLock
+		features
+			lock_unlock: in data port;
+			eth: requires bus access Ethernet;
+	end DoorLock;
+	
+	device AlarmSiren
+		features
+			trigger: in data port;
+			eth: requires bus access Ethernet;
+	end AlarmSiren;
+	
+	processor DoorController
+		features
+			door_control: in data port;
+			door1_lock_unlock: out data port;
+			door2_lock_unlock: out data port;
+			control_eth: requires bus access Ethernet;
+			door_eth: requires bus access Ethernet;
+	end DoorController;
+	
 	system ActionSubsystem
 		features
 			trigger_alarm: in data port;
 			door_control: in data port;
+			control_bus: provides bus access Ethernet;
 	end ActionSubsystem;
 
 	system implementation ActionSubsystem.Impl
-	
+		subcomponents
+			door_controller: processor DoorController;
+			siren: device AlarmSiren;
+			door1: device DoorLock;
+			door2: device DoorLock;
+			control_eth: bus Ethernet;
+			door_eth: bus Ethernet;
+			
+		connections
+			trigger_alarm_con: port trigger_alarm -> siren.trigger;
+			door_control_con: port door_control -> door_controller.door_control;
+			door1_con: port door_controller.door1_lock_unlock -> door1.lock_unlock;
+			door2_con: port door_controller.door2_lock_unlock -> door2.lock_unlock;
+			
+			control_eth_con: bus access control_bus -> control_eth;
+			alarm_eth_con: bus access control_eth -> siren.eth;
+			door_control_eth_con: bus access control_eth -> door_controller.control_eth;
+			door_controller_eth_out_con: bus access door_controller.door_eth -> door_eth;
+			door1_eth_con: bus access door_eth -> door1.eth;
+			door2_eth_con: bus access door_eth -> door2.eth;
+			
+		properties
+			Actual_Connection_Binding => (reference(control_eth)) applies to trigger_alarm_con;
+			Actual_Connection_Binding => (reference(control_eth)) applies to door_control_con;
+			Actual_Connection_Binding => (reference(door_eth)) applies to door1_con;
+			Actual_Connection_Binding => (reference(door_eth)) applies to door2_con;
 	end ActionSubsystem.Impl;
 
 end ActionSubsystem;

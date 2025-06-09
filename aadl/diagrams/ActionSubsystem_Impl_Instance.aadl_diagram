@@ -1,0 +1,286 @@
+<?xml version="1.0" encoding="ASCII"?>
+<diagram:Diagram xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:diagram="http://osate.org/diagram" formatVersion="7">
+  <element uuid="eed320e0-4931-4283-a06f-4cd2d6b2b362" manual="true">
+    <element uuid="4b691c5d-c353-4898-b5a3-93f62e99f4ef" manual="true">
+      <bo>
+        <seg>org.osate.ge.diagrams.instance</seg>
+        <seg>component_instance</seg>
+        <seg>control_eth</seg>
+      </bo>
+      <position x="273.64451599121094" y="118.33333333333334"/>
+      <size width="117.97004699707031" height="35.0"/>
+    </element>
+    <element uuid="79e0b8ad-cdff-4093-bc6b-95dae9fea8aa" manual="true">
+      <element uuid="03247cde-56e0-4ad9-83e9-343b0a4e40c5" manual="true" dockArea="left">
+        <bo>
+          <seg>org.osate.ge.diagrams.instance</seg>
+          <seg>feature_instance</seg>
+          <seg>eth</seg>
+        </bo>
+        <position y="60.0"/>
+      </element>
+      <element uuid="8fe551fc-f226-4d9e-a58d-0fcfe66645f7" manual="true" dockArea="left">
+        <bo>
+          <seg>org.osate.ge.diagrams.instance</seg>
+          <seg>feature_instance</seg>
+          <seg>lock_unlock</seg>
+        </bo>
+        <position y="10.0"/>
+      </element>
+      <bo>
+        <seg>org.osate.ge.diagrams.instance</seg>
+        <seg>component_instance</seg>
+        <seg>door1</seg>
+      </bo>
+      <position x="953.5598907470703" y="88.0"/>
+      <size width="249.43748474121094" height="110.0"/>
+    </element>
+    <element uuid="622cda8d-5083-4f59-b266-4c4476af620c" manual="true">
+      <element uuid="ba8b8c05-c8c3-4789-8eba-d4346b3d2a93" manual="true" dockArea="left">
+        <bo>
+          <seg>org.osate.ge.diagrams.instance</seg>
+          <seg>feature_instance</seg>
+          <seg>eth</seg>
+        </bo>
+        <position y="10.0"/>
+      </element>
+      <element uuid="131c244b-fedc-4c54-a4a9-cd07b6394f6b" manual="true" dockArea="left">
+        <bo>
+          <seg>org.osate.ge.diagrams.instance</seg>
+          <seg>feature_instance</seg>
+          <seg>lock_unlock</seg>
+        </bo>
+        <position y="60.0"/>
+      </element>
+      <bo>
+        <seg>org.osate.ge.diagrams.instance</seg>
+        <seg>component_instance</seg>
+        <seg>door2</seg>
+      </bo>
+      <position x="953.5598907470703" y="218.0"/>
+      <size width="249.43748474121094" height="110.0"/>
+    </element>
+    <element uuid="2ebdf453-fdc1-4f47-b981-18f53c6d436c" manual="true">
+      <element uuid="46bd3b93-a2d8-459a-8074-92bb9a0ff684" manual="true" dockArea="left">
+        <bo>
+          <seg>org.osate.ge.diagrams.instance</seg>
+          <seg>feature_instance</seg>
+          <seg>control_eth</seg>
+        </bo>
+        <position y="26.666666666666668"/>
+      </element>
+      <element uuid="396d2157-4b0e-4a71-9b7c-860e093d689c" manual="true" dockArea="right">
+        <bo>
+          <seg>org.osate.ge.diagrams.instance</seg>
+          <seg>feature_instance</seg>
+          <seg>door1_lock_unlock</seg>
+        </bo>
+        <position x="264.1237030029297" y="10.0"/>
+      </element>
+      <element uuid="a07e7c85-6172-4db8-bb1c-ff21a3860b79" manual="true" dockArea="right">
+        <bo>
+          <seg>org.osate.ge.diagrams.instance</seg>
+          <seg>feature_instance</seg>
+          <seg>door2_lock_unlock</seg>
+        </bo>
+        <position x="264.1237030029297" y="110.0"/>
+      </element>
+      <element uuid="1d351f78-c63c-4681-b28d-da50e96c6075" manual="true" dockArea="left">
+        <bo>
+          <seg>org.osate.ge.diagrams.instance</seg>
+          <seg>feature_instance</seg>
+          <seg>door_control</seg>
+        </bo>
+        <position y="93.33333333333334"/>
+      </element>
+      <element uuid="c5d3e8c8-d493-4c28-8aca-d42a9e43700f" manual="true" dockArea="right">
+        <bo>
+          <seg>org.osate.ge.diagrams.instance</seg>
+          <seg>feature_instance</seg>
+          <seg>door_eth</seg>
+        </bo>
+        <position x="322.6718864440918" y="60.0"/>
+      </element>
+      <bo>
+        <seg>org.osate.ge.diagrams.instance</seg>
+        <seg>component_instance</seg>
+        <seg>door_controller</seg>
+      </bo>
+      <position x="411.6145782470703" y="168.0"/>
+      <size width="387.30860137939453" height="160.0"/>
+    </element>
+    <element uuid="768aa4b8-09b5-4ce4-81ac-11acfb3b67a4" manual="true">
+      <bo>
+        <seg>org.osate.ge.diagrams.instance</seg>
+        <seg>component_instance</seg>
+        <seg>door_eth</seg>
+      </bo>
+      <position x="828.9231719970703" y="168.33333333333334"/>
+      <size width="104.63671493530273" height="35.0"/>
+    </element>
+    <element uuid="2e630824-ccd6-4378-baf4-d8895ce634be" manual="true">
+      <element uuid="c6c1e980-dbdb-4dcc-acb1-7515f2abf417" manual="true" dockArea="left">
+        <bo>
+          <seg>org.osate.ge.diagrams.instance</seg>
+          <seg>feature_instance</seg>
+          <seg>eth</seg>
+        </bo>
+        <position y="60.0"/>
+      </element>
+      <element uuid="ddcac527-fce0-4dbf-81dd-edaf46d645a4" manual="true" dockArea="left">
+        <bo>
+          <seg>org.osate.ge.diagrams.instance</seg>
+          <seg>feature_instance</seg>
+          <seg>trigger</seg>
+        </bo>
+        <position y="10.0"/>
+      </element>
+      <bo>
+        <seg>org.osate.ge.diagrams.instance</seg>
+        <seg>component_instance</seg>
+        <seg>siren</seg>
+      </bo>
+      <position x="411.6145782470703" y="38.0"/>
+      <size width="180.48567581176758" height="110.0"/>
+    </element>
+    <element uuid="28c3a2ac-1995-4d82-8adf-346bb969a41c" manual="true">
+      <bo>
+        <seg>org.osate.ge.diagrams.instance</seg>
+        <seg>connection_reference</seg>
+        <seg>alarm_eth_con : ActionSubsystem_Impl_Instance.control_eth -> ActionSubsystem_Impl_Instance.siren.eth</seg>
+      </bo>
+      <bendpoints>
+        <point x="391.61456298828125" y="130.0"/>
+      </bendpoints>
+    </element>
+    <element uuid="e8b6e755-bff8-4e03-a9cd-83a0f3eafc03" manual="true">
+      <bo>
+        <seg>org.osate.ge.diagrams.instance</seg>
+        <seg>connection_reference</seg>
+        <seg>control_eth_con : ActionSubsystem_Impl_Instance.control_bus -> ActionSubsystem_Impl_Instance.control_eth</seg>
+      </bo>
+      <bendpoints>
+        <point x="273.64453125" y="135.8333282470703"/>
+      </bendpoints>
+    </element>
+    <element uuid="a6a744f7-57c4-4329-bdd3-f50022eda3d9" manual="true">
+      <bo>
+        <seg>org.osate.ge.diagrams.instance</seg>
+        <seg>connection_reference</seg>
+        <seg>door1_con : ActionSubsystem_Impl_Instance.door_controller.door1_lock_unlock -> ActionSubsystem_Impl_Instance.door1.lock_unlock</seg>
+      </bo>
+      <bendpoints>
+        <point x="808.9231567382812" y="210.0"/>
+        <point x="808.9231567382812" y="157.3333282470703"/>
+        <point x="943.5598754882812" y="157.3333282470703"/>
+        <point x="943.5598754882812" y="130.0"/>
+      </bendpoints>
+    </element>
+    <element uuid="d263a49a-3111-44dd-99a0-c4c48129f9ee" manual="true">
+      <bo>
+        <seg>org.osate.ge.diagrams.instance</seg>
+        <seg>connection_reference</seg>
+        <seg>door1_eth_con : ActionSubsystem_Impl_Instance.door_eth -> ActionSubsystem_Impl_Instance.door1.eth</seg>
+      </bo>
+      <bendpoints>
+        <point x="933.5598754882812" y="180.0"/>
+      </bendpoints>
+    </element>
+    <element uuid="74fe06fd-b03b-4063-baf8-f6dc733a30af" manual="true">
+      <bo>
+        <seg>org.osate.ge.diagrams.instance</seg>
+        <seg>connection_reference</seg>
+        <seg>door2_con : ActionSubsystem_Impl_Instance.door_controller.door2_lock_unlock -> ActionSubsystem_Impl_Instance.door2.lock_unlock</seg>
+      </bo>
+    </element>
+    <element uuid="bad4f433-0315-418a-9fea-92e26e986d3c" manual="true">
+      <bo>
+        <seg>org.osate.ge.diagrams.instance</seg>
+        <seg>connection_reference</seg>
+        <seg>door2_eth_con : ActionSubsystem_Impl_Instance.door_eth -> ActionSubsystem_Impl_Instance.door2.eth</seg>
+      </bo>
+      <bendpoints>
+        <point x="937.5598754882812" y="191.6666717529297"/>
+        <point x="943.5598754882812" y="191.6666717529297"/>
+        <point x="943.5598754882812" y="260.0"/>
+      </bendpoints>
+    </element>
+    <element uuid="0c062989-d012-47de-8690-667788e00b9f" manual="true">
+      <bo>
+        <seg>org.osate.ge.diagrams.instance</seg>
+        <seg>connection_reference</seg>
+        <seg>door_control_con : ActionSubsystem_Impl_Instance.door_control -> ActionSubsystem_Impl_Instance.door_controller.door_control</seg>
+      </bo>
+    </element>
+    <element uuid="d7efc5dc-b55f-486c-8237-a21b707e997e" manual="true">
+      <bo>
+        <seg>org.osate.ge.diagrams.instance</seg>
+        <seg>connection_reference</seg>
+        <seg>door_control_eth_con : ActionSubsystem_Impl_Instance.control_eth -> ActionSubsystem_Impl_Instance.door_controller.control_eth</seg>
+      </bo>
+      <bendpoints>
+        <point x="395.61456298828125" y="141.6666717529297"/>
+        <point x="401.61456298828125" y="141.6666717529297"/>
+        <point x="401.61456298828125" y="226.6666717529297"/>
+      </bendpoints>
+    </element>
+    <element uuid="cbe24b94-c2ee-464c-963a-55bd86f4339c" manual="true">
+      <bo>
+        <seg>org.osate.ge.diagrams.instance</seg>
+        <seg>connection_reference</seg>
+        <seg>door_controller_eth_out_con : ActionSubsystem_Impl_Instance.door_controller.door_eth -> ActionSubsystem_Impl_Instance.door_eth</seg>
+      </bo>
+      <bendpoints>
+        <point x="818.9231567382812" y="260.0"/>
+        <point x="818.9231567382812" y="185.8333282470703"/>
+        <point x="824.9231567382812" y="185.8333282470703"/>
+      </bendpoints>
+    </element>
+    <element uuid="030e0713-6722-4c6a-ab47-7076113c748e" manual="true">
+      <bo>
+        <seg>org.osate.ge.diagrams.instance</seg>
+        <seg>connection_reference</seg>
+        <seg>trigger_alarm_con : ActionSubsystem_Impl_Instance.trigger_alarm -> ActionSubsystem_Impl_Instance.siren.trigger</seg>
+      </bo>
+    </element>
+    <element uuid="31c647c2-a9a1-4a5f-a5fb-ec85b2ed081d" manual="true" dockArea="left">
+      <bo>
+        <seg>org.osate.ge.diagrams.instance</seg>
+        <seg>feature_instance</seg>
+        <seg>control_bus</seg>
+      </bo>
+      <position y="103.83333333333334"/>
+    </element>
+    <element uuid="defb688d-b8a0-41ca-9bc8-dd343e7a013f" manual="true" dockArea="left">
+      <bo>
+        <seg>org.osate.ge.diagrams.instance</seg>
+        <seg>feature_instance</seg>
+        <seg>door_control</seg>
+      </bo>
+      <position y="261.33333333333337"/>
+    </element>
+    <element uuid="afb87fb2-075c-42da-ac80-89517658f028" manual="true" dockArea="left">
+      <bo>
+        <seg>org.osate.ge.diagrams.instance</seg>
+        <seg>feature_instance</seg>
+        <seg>trigger_alarm</seg>
+      </bo>
+      <position y="48.0"/>
+    </element>
+    <bo>
+      <seg>org.osate.ge.diagrams.instance</seg>
+      <seg>system_instance</seg>
+      <seg>/alarm_system/instances/actionsubsystem_actionsubsystem_impl_instance.aaxl2</seg>
+    </bo>
+    <position/>
+    <size width="1305.5455627441406" height="340.0"/>
+  </element>
+  <config type="structure" connectionPrimaryLabelsVisible="false">
+    <enabledAadlProperties/>
+    <context>
+      <seg>org.osate.ge.diagrams.instance</seg>
+      <seg>system_instance</seg>
+      <seg>/alarm_system/instances/actionsubsystem_actionsubsystem_impl_instance.aaxl2</seg>
+    </context>
+  </config>
+</diagram:Diagram>

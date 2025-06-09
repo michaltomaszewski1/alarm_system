@@ -1,0 +1,169 @@
+<?xml version="1.0" encoding="ASCII"?>
+<xmi:XMI xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:aadl2="http://aadl.info/AADL/2.0" xmlns:instance="http://aadl.info/AADL/2.0/instance">
+  <instance:SystemInstance name="ActionSubsystem_Impl_Instance" category="system">
+    <featureInstance name="control_bus" category="busAccess" direction="out" type="/1">
+      <feature xsi:type="aadl2:BusAccess" href="../ActionSubsystem.aadl#/0/@ownedPublicSection/@ownedClassifier.4/@ownedBusAccess.0"/>
+    </featureInstance>
+    <featureInstance name="trigger_alarm">
+      <feature xsi:type="aadl2:DataPort" href="../ActionSubsystem.aadl#/0/@ownedPublicSection/@ownedClassifier.4/@ownedDataPort.0"/>
+    </featureInstance>
+    <featureInstance name="door_control">
+      <feature xsi:type="aadl2:DataPort" href="../ActionSubsystem.aadl#/0/@ownedPublicSection/@ownedClassifier.4/@ownedDataPort.1"/>
+    </featureInstance>
+    <componentInstance name="control_eth" category="bus">
+      <subcomponent xsi:type="aadl2:BusSubcomponent" href="../ActionSubsystem.aadl#/0/@ownedPublicSection/@ownedClassifier.5/@ownedBusSubcomponent.0"/>
+      <index>0</index>
+      <classifier xsi:type="aadl2:BusType" href="../ActionSubsystem.aadl#ActionSubsystem.Ethernet"/>
+    </componentInstance>
+    <componentInstance name="door_eth" category="bus">
+      <subcomponent xsi:type="aadl2:BusSubcomponent" href="../ActionSubsystem.aadl#/0/@ownedPublicSection/@ownedClassifier.5/@ownedBusSubcomponent.1"/>
+      <index>0</index>
+      <classifier xsi:type="aadl2:BusType" href="../ActionSubsystem.aadl#ActionSubsystem.Ethernet"/>
+    </componentInstance>
+    <componentInstance name="siren" category="device">
+      <featureInstance name="trigger">
+        <feature xsi:type="aadl2:DataPort" href="../ActionSubsystem.aadl#/0/@ownedPublicSection/@ownedClassifier.2/@ownedDataPort.0"/>
+      </featureInstance>
+      <featureInstance name="eth" category="busAccess" type="/1">
+        <feature xsi:type="aadl2:BusAccess" href="../ActionSubsystem.aadl#/0/@ownedPublicSection/@ownedClassifier.2/@ownedBusAccess.0"/>
+      </featureInstance>
+      <subcomponent xsi:type="aadl2:DeviceSubcomponent" href="../ActionSubsystem.aadl#/0/@ownedPublicSection/@ownedClassifier.5/@ownedDeviceSubcomponent.0"/>
+      <index>0</index>
+      <classifier xsi:type="aadl2:DeviceType" href="../ActionSubsystem.aadl#ActionSubsystem.AlarmSiren"/>
+    </componentInstance>
+    <componentInstance name="door1" category="device">
+      <featureInstance name="lock_unlock">
+        <feature xsi:type="aadl2:DataPort" href="../ActionSubsystem.aadl#/0/@ownedPublicSection/@ownedClassifier.1/@ownedDataPort.0"/>
+      </featureInstance>
+      <featureInstance name="eth" category="busAccess" type="/1">
+        <feature xsi:type="aadl2:BusAccess" href="../ActionSubsystem.aadl#/0/@ownedPublicSection/@ownedClassifier.1/@ownedBusAccess.0"/>
+      </featureInstance>
+      <subcomponent xsi:type="aadl2:DeviceSubcomponent" href="../ActionSubsystem.aadl#/0/@ownedPublicSection/@ownedClassifier.5/@ownedDeviceSubcomponent.1"/>
+      <index>0</index>
+      <classifier xsi:type="aadl2:DeviceType" href="../ActionSubsystem.aadl#ActionSubsystem.DoorLock"/>
+    </componentInstance>
+    <componentInstance name="door2" category="device">
+      <featureInstance name="lock_unlock">
+        <feature xsi:type="aadl2:DataPort" href="../ActionSubsystem.aadl#/0/@ownedPublicSection/@ownedClassifier.1/@ownedDataPort.0"/>
+      </featureInstance>
+      <featureInstance name="eth" category="busAccess" type="/1">
+        <feature xsi:type="aadl2:BusAccess" href="../ActionSubsystem.aadl#/0/@ownedPublicSection/@ownedClassifier.1/@ownedBusAccess.0"/>
+      </featureInstance>
+      <subcomponent xsi:type="aadl2:DeviceSubcomponent" href="../ActionSubsystem.aadl#/0/@ownedPublicSection/@ownedClassifier.5/@ownedDeviceSubcomponent.2"/>
+      <index>0</index>
+      <classifier xsi:type="aadl2:DeviceType" href="../ActionSubsystem.aadl#ActionSubsystem.DoorLock"/>
+    </componentInstance>
+    <componentInstance name="door_controller" category="processor">
+      <featureInstance name="door_control">
+        <feature xsi:type="aadl2:DataPort" href="../ActionSubsystem.aadl#/0/@ownedPublicSection/@ownedClassifier.3/@ownedDataPort.0"/>
+      </featureInstance>
+      <featureInstance name="door1_lock_unlock" direction="out">
+        <feature xsi:type="aadl2:DataPort" href="../ActionSubsystem.aadl#/0/@ownedPublicSection/@ownedClassifier.3/@ownedDataPort.1"/>
+      </featureInstance>
+      <featureInstance name="door2_lock_unlock" direction="out">
+        <feature xsi:type="aadl2:DataPort" href="../ActionSubsystem.aadl#/0/@ownedPublicSection/@ownedClassifier.3/@ownedDataPort.2"/>
+      </featureInstance>
+      <featureInstance name="control_eth" category="busAccess" type="/1">
+        <feature xsi:type="aadl2:BusAccess" href="../ActionSubsystem.aadl#/0/@ownedPublicSection/@ownedClassifier.3/@ownedBusAccess.0"/>
+      </featureInstance>
+      <featureInstance name="door_eth" category="busAccess" type="/1">
+        <feature xsi:type="aadl2:BusAccess" href="../ActionSubsystem.aadl#/0/@ownedPublicSection/@ownedClassifier.3/@ownedBusAccess.1"/>
+      </featureInstance>
+      <subcomponent xsi:type="aadl2:ProcessorSubcomponent" href="../ActionSubsystem.aadl#/0/@ownedPublicSection/@ownedClassifier.5/@ownedProcessorSubcomponent.0"/>
+      <index>0</index>
+      <classifier xsi:type="aadl2:ProcessorType" href="../ActionSubsystem.aadl#ActionSubsystem.DoorController"/>
+    </componentInstance>
+    <connectionInstance name="control_bus -> control_eth" kind="accessConnection" destination="/0/@componentInstance.0" source="/0/@featureInstance.0">
+      <connectionReference context="/0" source="/0/@featureInstance.0" destination="/0/@componentInstance.0">
+        <connection xsi:type="aadl2:AccessConnection" href="../ActionSubsystem.aadl#/0/@ownedPublicSection/@ownedClassifier.5/@ownedAccessConnection.0"/>
+      </connectionReference>
+    </connectionInstance>
+    <connectionInstance name="trigger_alarm -> siren.trigger" kind="portConnection" destination="/0/@componentInstance.2/@featureInstance.0" source="/0/@featureInstance.1">
+      <ownedPropertyAssociation xsi:type="instance:PropertyAssociationInstance">
+        <property href="platform:/plugin/org.osate.aadl2.contrib/resources/properties/Predeclared_Property_Sets/Deployment_Properties.aadl#Deployment_Properties.Actual_Connection_Binding"/>
+        <ownedValue>
+          <ownedValue xsi:type="aadl2:ListValue">
+            <ownedListElement xsi:type="instance:InstanceReferenceValue" referencedInstanceObject="/0/@componentInstance.0"/>
+          </ownedValue>
+        </ownedValue>
+        <propertyAssociation href="../ActionSubsystem.aadl#/0/@ownedPublicSection/@ownedClassifier.5/@ownedPropertyAssociation.0"/>
+      </ownedPropertyAssociation>
+      <connectionReference context="/0" source="/0/@featureInstance.1" destination="/0/@componentInstance.2/@featureInstance.0">
+        <connection xsi:type="aadl2:PortConnection" href="../ActionSubsystem.aadl#/0/@ownedPublicSection/@ownedClassifier.5/@ownedPortConnection.0"/>
+      </connectionReference>
+    </connectionInstance>
+    <connectionInstance name="door_control -> door_controller.door_control" kind="portConnection" destination="/0/@componentInstance.5/@featureInstance.0" source="/0/@featureInstance.2">
+      <ownedPropertyAssociation xsi:type="instance:PropertyAssociationInstance">
+        <property href="platform:/plugin/org.osate.aadl2.contrib/resources/properties/Predeclared_Property_Sets/Deployment_Properties.aadl#Deployment_Properties.Actual_Connection_Binding"/>
+        <ownedValue>
+          <ownedValue xsi:type="aadl2:ListValue">
+            <ownedListElement xsi:type="instance:InstanceReferenceValue" referencedInstanceObject="/0/@componentInstance.0"/>
+          </ownedValue>
+        </ownedValue>
+        <propertyAssociation href="../ActionSubsystem.aadl#/0/@ownedPublicSection/@ownedClassifier.5/@ownedPropertyAssociation.1"/>
+      </ownedPropertyAssociation>
+      <connectionReference context="/0" source="/0/@featureInstance.2" destination="/0/@componentInstance.5/@featureInstance.0">
+        <connection xsi:type="aadl2:PortConnection" href="../ActionSubsystem.aadl#/0/@ownedPublicSection/@ownedClassifier.5/@ownedPortConnection.1"/>
+      </connectionReference>
+    </connectionInstance>
+    <connectionInstance name="control_eth -> siren.eth" complete="true" kind="accessConnection" destination="/0/@componentInstance.2/@featureInstance.1" source="/0/@componentInstance.0">
+      <connectionReference context="/0" source="/0/@componentInstance.0" destination="/0/@componentInstance.2/@featureInstance.1">
+        <connection xsi:type="aadl2:AccessConnection" href="../ActionSubsystem.aadl#/0/@ownedPublicSection/@ownedClassifier.5/@ownedAccessConnection.1"/>
+      </connectionReference>
+    </connectionInstance>
+    <connectionInstance name="control_eth -> door_controller.control_eth" complete="true" kind="accessConnection" destination="/0/@componentInstance.5/@featureInstance.3" source="/0/@componentInstance.0">
+      <connectionReference context="/0" source="/0/@componentInstance.0" destination="/0/@componentInstance.5/@featureInstance.3">
+        <connection xsi:type="aadl2:AccessConnection" href="../ActionSubsystem.aadl#/0/@ownedPublicSection/@ownedClassifier.5/@ownedAccessConnection.2"/>
+      </connectionReference>
+    </connectionInstance>
+    <connectionInstance name="door_eth -> door1.eth" complete="true" kind="accessConnection" destination="/0/@componentInstance.3/@featureInstance.1" source="/0/@componentInstance.1">
+      <connectionReference context="/0" source="/0/@componentInstance.1" destination="/0/@componentInstance.3/@featureInstance.1">
+        <connection xsi:type="aadl2:AccessConnection" href="../ActionSubsystem.aadl#/0/@ownedPublicSection/@ownedClassifier.5/@ownedAccessConnection.4"/>
+      </connectionReference>
+    </connectionInstance>
+    <connectionInstance name="door_eth -> door2.eth" complete="true" kind="accessConnection" destination="/0/@componentInstance.4/@featureInstance.1" source="/0/@componentInstance.1">
+      <connectionReference context="/0" source="/0/@componentInstance.1" destination="/0/@componentInstance.4/@featureInstance.1">
+        <connection xsi:type="aadl2:AccessConnection" href="../ActionSubsystem.aadl#/0/@ownedPublicSection/@ownedClassifier.5/@ownedAccessConnection.5"/>
+      </connectionReference>
+    </connectionInstance>
+    <connectionInstance name="door_controller.door1_lock_unlock -> door1.lock_unlock" complete="true" kind="portConnection" destination="/0/@componentInstance.3/@featureInstance.0" source="/0/@componentInstance.5/@featureInstance.1">
+      <ownedPropertyAssociation xsi:type="instance:PropertyAssociationInstance">
+        <property href="platform:/plugin/org.osate.aadl2.contrib/resources/properties/Predeclared_Property_Sets/Deployment_Properties.aadl#Deployment_Properties.Actual_Connection_Binding"/>
+        <ownedValue>
+          <ownedValue xsi:type="aadl2:ListValue">
+            <ownedListElement xsi:type="instance:InstanceReferenceValue" referencedInstanceObject="/0/@componentInstance.1"/>
+          </ownedValue>
+        </ownedValue>
+        <propertyAssociation href="../ActionSubsystem.aadl#/0/@ownedPublicSection/@ownedClassifier.5/@ownedPropertyAssociation.2"/>
+      </ownedPropertyAssociation>
+      <connectionReference context="/0" source="/0/@componentInstance.5/@featureInstance.1" destination="/0/@componentInstance.3/@featureInstance.0">
+        <connection xsi:type="aadl2:PortConnection" href="../ActionSubsystem.aadl#/0/@ownedPublicSection/@ownedClassifier.5/@ownedPortConnection.2"/>
+      </connectionReference>
+    </connectionInstance>
+    <connectionInstance name="door_controller.door2_lock_unlock -> door2.lock_unlock" complete="true" kind="portConnection" destination="/0/@componentInstance.4/@featureInstance.0" source="/0/@componentInstance.5/@featureInstance.2">
+      <ownedPropertyAssociation xsi:type="instance:PropertyAssociationInstance">
+        <property href="platform:/plugin/org.osate.aadl2.contrib/resources/properties/Predeclared_Property_Sets/Deployment_Properties.aadl#Deployment_Properties.Actual_Connection_Binding"/>
+        <ownedValue>
+          <ownedValue xsi:type="aadl2:ListValue">
+            <ownedListElement xsi:type="instance:InstanceReferenceValue" referencedInstanceObject="/0/@componentInstance.1"/>
+          </ownedValue>
+        </ownedValue>
+        <propertyAssociation href="../ActionSubsystem.aadl#/0/@ownedPublicSection/@ownedClassifier.5/@ownedPropertyAssociation.3"/>
+      </ownedPropertyAssociation>
+      <connectionReference context="/0" source="/0/@componentInstance.5/@featureInstance.2" destination="/0/@componentInstance.4/@featureInstance.0">
+        <connection xsi:type="aadl2:PortConnection" href="../ActionSubsystem.aadl#/0/@ownedPublicSection/@ownedClassifier.5/@ownedPortConnection.3"/>
+      </connectionReference>
+    </connectionInstance>
+    <connectionInstance name="door_controller.door_eth -> door_eth" complete="true" kind="accessConnection" destination="/0/@componentInstance.1" source="/0/@componentInstance.5/@featureInstance.4">
+      <connectionReference context="/0" source="/0/@componentInstance.5/@featureInstance.4" destination="/0/@componentInstance.1">
+        <connection xsi:type="aadl2:AccessConnection" href="../ActionSubsystem.aadl#/0/@ownedPublicSection/@ownedClassifier.5/@ownedAccessConnection.3"/>
+      </connectionReference>
+    </connectionInstance>
+    <classifier xsi:type="aadl2:SystemImplementation" href="../ActionSubsystem.aadl#ActionSubsystem.ActionSubsystem.Impl"/>
+    <systemOperationMode name="No Modes"/>
+    <componentImplementation xsi:type="aadl2:SystemImplementation" href="../ActionSubsystem.aadl#ActionSubsystem.ActionSubsystem.Impl"/>
+  </instance:SystemInstance>
+  <instance:ComponentInstance name="ActionSubsystem::Ethernet" category="bus">
+    <classifier xsi:type="aadl2:BusType" href="../ActionSubsystem.aadl#ActionSubsystem.Ethernet"/>
+  </instance:ComponentInstance>
+</xmi:XMI>
